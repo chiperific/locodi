@@ -1,0 +1,124 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+// Theme colors:
+$primary-color: #F8EDD9;
+$secondary-color: #88A4D2;
+$tertiary-color-1: #E7A79F;
+$tertiary-color-2: #AAD2B4;
+$quaternary-color: #20386F;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $primary-color;
+  margin-bottom: 40px;
+}
+
+#sidebar {
+  .well {
+    background-color: $secondary-color;
+  }
+  position: fixed;
+  height: 40%;
+  left: 0;
+  margin: 30% inherit;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      margin: 2em inherit;
+    }
+    li:first-child {
+      margin-top: 0em;
+    }
+    li:last-child {
+      margin-bottom: 0em;
+    }
+
+    .sub-menu {
+      margin-top: -1em;
+      margin-left: .75em;
+    }
+    .active {
+      width: 100%;
+      background-color: $tertiary-color-1;
+      border-radius: 2px;
+    }
+  }
+
+}
+
+#sidebar_ul {
+  margin-bottom: 0;
+}
+
+#page_body {
+  margin-left: 30%;
+  width: 70%;
+}
+
+.footer {
+  position: absolute;
+  padding: .75em inherit;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  background-color: $quaternary-color;
+  p {
+    text-align: right;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+
+h1 {
+  color: #666666;
+}
+
+h2 {
+  color: #4C4C4C;
+}
+
+h3 {
+  color: #333333;
+}
+
+p, li {
+  color: #222222;
+}
+
+@media ( max-width: 320px ) {
+  body {
+    font-size: .95em;
+  }
+  
+}
+

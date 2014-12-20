@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Locodi | <%= @page_title %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body >
+  
+  <div id="sidebar" class="container-fluid">
+    <div class="well well-sm">
+      <%= render 'sidebar' %>
+    </div>
+  </div>
+
+  <div id="page_body" class="container-fluid">
+    <%= yield %>
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <p>(c) 2014 LOCODI | 
+        <small>
+          Created by <%= link_to "Chiperific", "http://chiperific.com", target: :blank %>
+        </small>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
