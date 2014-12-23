@@ -21,30 +21,58 @@
 
 
 // Theme colors:
-$primary-color: #F8EDD9;
-$secondary-color: #88A4D2;
-$tertiary-color-1: #E7A79F;
-$tertiary-color-2: #AAD2B4;
-$quaternary-color: #20386F;
+$pri-clr: rgba(248,237,217,1); //beige
+$sec-clr: rgba(136,164,210,1); //lt blue
+$ter-clr-1: rgba(231,167,159,1); //lt red
+$ter-clr-2: rgba(170,210,180,1); //lt green
+$quat-clr: rgba(32,56,111,1); //dk blue
 
+$pri-clr-trans: rgba(248,237,217,.5); //beige
+$sec-clr-trans: rgba(136,164,210,.5); //lt blue
+$ter-clr-1-trans: rgba(231,167,159,.5); //lt red
+$ter-clr-2-trans: rgba(170,210,180,.5); //lt green
+$quat-clr-trans: rgba(32,56,111,.75); //dk blue
+
+h1 {
+  color: #666666;
+}
+
+h2 {
+  color: #4C4C4C;
+}
+
+h3 {
+  color: #333333;
+}
+
+p, li {
+  color: #222222;
+}
+
+// Template styling
 html {
-  position: relative;
-  min-height: 100%;
+  width: 100%;
 }
 
 body {
-  background-color: $primary-color;
-  margin-bottom: 40px;
+  background-color: $pri-clr;
+  margin-bottom: 5%;
+  width: 100%
 }
 
 #sidebar {
-  .well {
-    background-color: $secondary-color;
-  }
+  padding-left: 0;
+  padding-right: 0;
+  
   position: fixed;
-  height: 40%;
+  //height: 40%;
   left: 0;
-  margin: 30% inherit;
+  margin-top: 30%;
+
+  .well {
+    background-color: $ter-clr-1-trans;
+    border: 0;
+  }
 
   ul {
     list-style: none;
@@ -66,53 +94,42 @@ body {
     }
     .active {
       width: 100%;
-      background-color: $tertiary-color-1;
-      border-radius: 2px;
+      background-color: $ter-clr-1;
+      //border-radius: 2px;
     }
   }
-
+  #sidebar_ul {
+    margin-bottom: 0;
+  }
 }
 
-#sidebar_ul {
-  margin-bottom: 0;
-}
+
 
 #page_body {
-  margin-left: 30%;
-  width: 70%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  //height: 95%
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   padding: .75em inherit;
   width: 100%;
   bottom: 0;
   left: 0;
-  height: 40px;
-  background-color: $quaternary-color;
+  height: 5%;
+  background-color: $quat-clr-trans;
   p {
     text-align: right;
     color: white;
-    a {
-      color: white;
+    span#created_by {
+      font-size: .75em;
+      a {
+        color: white;
+      }
     }
   }
-}
-
-h1 {
-  color: #666666;
-}
-
-h2 {
-  color: #4C4C4C;
-}
-
-h3 {
-  color: #333333;
-}
-
-p, li {
-  color: #222222;
 }
 
 @media ( max-width: 320px ) {
