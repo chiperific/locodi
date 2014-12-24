@@ -1,8 +1,11 @@
 .background-image {
+  overflow: hidden;
+  width: 100%;
+  display: block;
   img {
     position: absolute;
-    left: 0;
     width: 100%;
     z-index: -1;
+    overflow: hidden;
   }
 }

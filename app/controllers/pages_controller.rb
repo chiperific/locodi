@@ -24,6 +24,11 @@ class PagesController < ApplicationController
     @page_finder = "support"
   end
 
+  def calendar
+    @page_title = "Events"
+    @page_finder  = "calendar"
+  end
+
   def social
     @page_title = "Social"
     @page_finder = "social"

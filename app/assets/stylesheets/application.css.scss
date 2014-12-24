@@ -1,15 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -31,7 +20,7 @@ $pri-clr-trans: rgba(248,237,217,.5); //beige
 $sec-clr-trans: rgba(136,164,210,.5); //lt blue
 $ter-clr-1-trans: rgba(231,167,159,.5); //lt red
 $ter-clr-2-trans: rgba(170,210,180,.5); //lt green
-$quat-clr-trans: rgba(32,56,111,.75); //dk blue
+$quat-clr-trans: rgba(32,56,111,.65); //dk blue
 
 h1 {
   color: #666666;
@@ -50,24 +39,27 @@ p, li {
 }
 
 // Template styling
-html {
+html, body {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
   background-color: $pri-clr;
   margin-bottom: 5%;
-  width: 100%
+  //display: block;
 }
 
 #sidebar {
   padding-left: 0;
   padding-right: 0;
-  
-  position: fixed;
-  //height: 40%;
+  position: absolute;
   left: 0;
-  margin-top: 30%;
+  bottom: 30px;
+  //margin-top: 10%;
 
   .well {
     background-color: $ter-clr-1-trans;
@@ -106,19 +98,20 @@ body {
 
 
 #page_body {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   width: 100%;
-  //height: 95%
+  padding: 0;
 }
 
 .footer {
   position: fixed;
+  z-index: 3;
   padding: .75em inherit;
   width: 100%;
   bottom: 0;
   left: 0;
-  height: 5%;
+  //height: 5%;
+  height: 30px;
   background-color: $quat-clr-trans;
   p {
     text-align: right;
@@ -132,7 +125,7 @@ body {
   }
 }
 
-@media ( max-width: 320px ) {
+@media ( max-width: 600px ) {
   body {
     font-size: .95em;
   }

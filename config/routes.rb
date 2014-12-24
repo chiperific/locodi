@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   match 'history', to: 'pages#history', via: :get
   match 'support', to: 'pages#history', via: :get
   match 'social', to: 'pages#social', via: :get
+  match 'calendar', to: 'pages#calendar', via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
