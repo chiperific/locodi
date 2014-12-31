@@ -26,6 +26,7 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 
 h1 {
   color: #666666;
+  font-size: 4em;
 }
 
 .dark {
@@ -38,6 +39,7 @@ h2 {
 
 h3 {
   color: #333333;
+  margin: 10px inherit;
 }
 
 p, li {
@@ -50,42 +52,37 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background-color: $pri-clr;
   margin-bottom: 5%;
-  //display: block;
 }
 
 #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ;
-    -moz-transition: all 0.5s ;
-    -o-transition: all 0.5s ;
-    transition: all 0.5s ;
+  //height: 100%;
+  padding-left: 0;
+  -webkit-transition: all 0.5s ;
+  -moz-transition: all 0.5s ;
+  -o-transition: all 0.5s ;
+  transition: all 0.5s ;
 }
 
 #page_body {
-  position: relative;
-  //width: 100%;
+  width: 100%;
+  display: inline-block;
   margin-left: 25px;
-  margin-right: 1em;
+  padding-right: 3em;
+  z-index: 1;
 }
 
+// Lives above the wrapper
 .banner-title {
   margin: 1em;
-  border: solid;
+  border: solid 2px;
   min-height: 50px;
-}
-
-.content-block {
-}
-
-// TEMP
-.content-block > div { 
-  border: solid;
+  z-index: 2;
 }
 
 .footer {
@@ -119,7 +116,7 @@ body {
 }
 
 // Shrink fonts on short screens
-@media ( max-width: 600px ) {
+@media ( max-width: 767px ) {
   body {
     font-size: 1.25em;
   }
@@ -129,11 +126,12 @@ body {
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 1.25em;
+    margin: 5px inherit;
   }
   
 }

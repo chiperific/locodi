@@ -17,10 +17,10 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 // Styles
 #sidebar-wrapper {
   z-index: 10;
-  position: fixed;
+  position: absolute;
   left: 100px;
   width: 0;
-  height: 100%;
+  height: inherit;
   margin-left: -100px;
   overflow: hidden;
   background: $ter-clr-2-trans;
@@ -74,10 +74,11 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 // The div actually lives on application.html.erb
 #sidebar_button {
   position: fixed;
-  top: 25%;
+  top: 50%;
   left: 0;
   width: 25px;
   height: 50px;
+  line-height: 50px;
   //margin-left: -25px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -88,6 +89,14 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
   -moz-transition: all 0.5s ;
   -o-transition: all 0.5s ;
   transition: all 0.5s ;
+  a {
+    color: $pri-clr;
+    line-height: 50px;
+    i {
+      padding-left: 4px;
+      line-height: 50px;
+    }
+  }
 }
 
 // Actions
