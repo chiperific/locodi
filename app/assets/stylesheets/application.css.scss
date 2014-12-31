@@ -10,20 +10,26 @@
 
 
 // Theme colors:
+// Color scheme: http://www.rapidtables.com/web/color/color-scheme.htm
+//     Starting hex: #A67240
 $pri-clr: rgba(248,237,217,1); //beige
 $sec-clr: rgba(136,164,210,1); //lt blue
 $ter-clr-1: rgba(231,167,159,1); //lt red
-$ter-clr-2: rgba(170,210,180,1); //lt green
+$ter-clr-2: rgba(116,165,64,1); //lt green
 $quat-clr: rgba(32,56,111,1); //dk blue
 
 $pri-clr-trans: rgba(248,237,217,.5); //beige
 $sec-clr-trans: rgba(136,164,210,.5); //lt blue
 $ter-clr-1-trans: rgba(231,167,159,.5); //lt red
-$ter-clr-2-trans: rgba(170,210,180,.5); //lt green
+$ter-clr-2-trans: rgba(83,165,64,.5); //lt green
 $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 
 h1 {
   color: #666666;
+}
+
+.dark {
+  color: #333333;
 }
 
 h2 {
@@ -53,54 +59,33 @@ body {
   //display: block;
 }
 
-#sidebar {
-  padding-left: 0;
-  padding-right: 0;
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  //margin-top: 10%;
-
-  .well {
-    background-color: $ter-clr-1-trans;
-    border: 0;
-  }
-
-  ul {
-    list-style: none;
+#wrapper {
     padding-left: 0;
-    
-    li {
-      margin: 2em inherit;
-    }
-    li:first-child {
-      margin-top: 0em;
-    }
-    li:last-child {
-      margin-bottom: 0em;
-    }
-
-    .sub-menu {
-      margin-top: -1em;
-      margin-left: .75em;
-    }
-    .active {
-      width: 100%;
-      background-color: $ter-clr-1;
-      //border-radius: 2px;
-    }
-  }
-  #sidebar_ul {
-    margin-bottom: 0;
-  }
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
 }
 
-
-
 #page_body {
-  margin: 0;
-  width: 100%;
-  padding: 0;
+  position: relative;
+  //width: 100%;
+  margin-left: 25px;
+  margin-right: 1em;
+}
+
+.banner-title {
+  margin: 1em;
+  border: solid;
+  min-height: 50px;
+}
+
+.content-block {
+}
+
+// TEMP
+.content-block > div { 
+  border: solid;
 }
 
 .footer {
@@ -111,11 +96,12 @@ body {
   bottom: 0;
   left: 0;
   //height: 5%;
-  height: 30px;
+  //height: 30px;
   background-color: $quat-clr-trans;
   p {
     text-align: right;
     color: white;
+    line-height: .25em;
     span#created_by {
       font-size: .75em;
       a {
@@ -125,9 +111,29 @@ body {
   }
 }
 
+// Hide the "created by" section of the footer on skinny screens
+@media ( max-width: 300px ) {
+  #created_by {
+    display: none;
+  }
+}
+
+// Shrink fonts on short screens
 @media ( max-width: 600px ) {
   body {
-    font-size: .95em;
+    font-size: 1.25em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
   }
   
 }

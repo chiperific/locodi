@@ -1,3 +1,6 @@
+# for pages with background images, auto-fit the image to the screen 
+# on window load and resize
+
 imgResizer = () ->
   div = $('.supersized')
   bgimg = $('.supersized-image')
@@ -17,6 +20,7 @@ imgResizer = () ->
 
 window.onload = () ->
   imgResizer()
+  
 
 $(window).resize ->
   imgResizer()

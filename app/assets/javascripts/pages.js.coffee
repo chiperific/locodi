@@ -7,3 +7,4 @@ jQuery ->
   $('#sidebar_ul').children('li').removeClass("active")
   active_element = $('#sidebar_ul').find('#' + page)
   active_element.addClass("active")
+    

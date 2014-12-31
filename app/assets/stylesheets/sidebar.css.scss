@@ -1,0 +1,104 @@
+// Theme colors:
+// Color scheme: http://www.rapidtables.com/web/color/color-scheme.htm
+//     Starting hex: #A67240
+$pri-clr: rgba(248,237,217,1); //beige
+$sec-clr: rgba(136,164,210,1); //lt blue
+$ter-clr-1: rgba(231,167,159,1); //lt red
+$ter-clr-2: rgba(116,165,64,1); //lt green
+$quat-clr: rgba(32,56,111,1); //dk blue
+
+$pri-clr-trans: rgba(248,237,217,.5); //beige
+$sec-clr-trans: rgba(136,164,210,.5); //lt blue
+$ter-clr-1-trans: rgba(231,167,159,.5); //lt red
+$ter-clr-2-trans: rgba(83,165,64,.5); //lt green
+$quat-clr-trans: rgba(32,56,111,.65); //dk blue
+
+
+// Styles
+#sidebar-wrapper {
+  z-index: 10;
+  position: fixed;
+  left: 100px;
+  width: 0;
+  height: 100%;
+  margin-left: -100px;
+  overflow: hidden;
+  background: $ter-clr-2-trans;
+  -webkit-transition: all 0.5s ;
+  -moz-transition: all 0.5s ;
+  -o-transition: all 0.5s ;
+  transition: all 0.5s ;
+}
+
+#sidebar_ul {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    text-indent: 8px;
+    line-height: 40px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255,255,255,0.2);
+    }
+
+    a:active, a:focus {
+      text-decoration: none;
+    }
+  }
+
+  .sub-menu {
+    margin-top: -.5em;
+    margin-left: .75em;
+  }
+  .active {
+    background-color: $ter-clr-2;
+    border: rgba(255,255,255, 0.2) solid 1px;
+    //border-radius: 4px;
+  }
+}
+
+// The div actually lives on application.html.erb
+#sidebar_button {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  width: 25px;
+  height: 50px;
+  //margin-left: -25px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background: $ter-clr-2-trans;
+  -webkit-transition: all 0.5s ;
+  -moz-transition: all 0.5s ;
+  -o-transition: all 0.5s ;
+  transition: all 0.5s ;
+}
+
+// Actions
+#wrapper.show-sidebar {
+  padding-left: 100px;
+}
+
+#wrapper.show-sidebar #sidebar-wrapper {
+    width: 100px;
+}
+
+#wrapper.show-sidebar #sidebar_button {
+  left: 100px;
+}

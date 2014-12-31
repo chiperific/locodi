@@ -9,22 +9,34 @@
 </head>
 
 <body >
-
-  <div id="sidebar" class="container-fluid">
-    <div class="well well-sm">
-      <%= render 'sidebar' %>
+  <div class="banner-title row">
+    <div class="col-xs-12">
+      <h1 class="dark text-center">LOCODI</h1>
+      <p class="text-center">The tagline of the century</p>
     </div>
   </div>
 
-  <div id="page_body" class="container-fluid">
-    <%= yield %>
+  <div id="wrapper" class="show-sidebar">
+    
+    <%= render 'sidebar' %>
+
+    <div id="page_body" class="container-fluid">
+      <%= yield %>
+    
+      <div id="sidebar_button">
+        <%= link_to( icon('angle-double-left fa-2x'), "#", id: "sidebar_toggle") %>
+      </div>
+
+    </div>
   </div>
+  
+  
 
   <footer class="footer">
     <div class="container-fluid">
-      <p>(c) 2014 LOCODI |
+      <p>(c) 2014 LOCODI
         <span id="created_by">
-          Created by <%= link_to "Chiperific", "http://chiperific.com", target: :blank %>
+          | Created by <%= link_to "Chiperific", "http://chiperific.com", target: :blank %>
         </span>
       </p>
     </div>
