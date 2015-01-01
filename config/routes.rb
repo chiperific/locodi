@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   match 'work', to: 'pages#work', via: :get
   match 'leaders', to: 'pages#leaders', via: :get
   match 'history', to: 'pages#history', via: :get
-  match 'support', to: 'pages#history', via: :get
+  match 'support', to: 'pages#support', via: :get
   match 'social', to: 'pages#social', via: :get
   match 'calendar', to: 'pages#calendar', via: :get
 

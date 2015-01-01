@@ -1,12 +1,14 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$sec-clr: rgba(136,164,210,1); //lt blue
+$quat-clr: rgba(32,56,111,1); //dk blue
 
 // Set a min-height for Content blocks
 div.content-block div.well {
   min-height: 10em;
   height: 100%;
-  background-color: rgba(255,255,255,0.26);
+  background-color: rgba(255,255,255,0.3);
   border-radius: 12px;
   border: none;
   padding: 1em;
@@ -22,4 +24,16 @@ div.story-head {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+// donate-image and donate-btn styling:
+.donate-image {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.donate-btn {
+  background-color: $quat-clr !important;
+  display: block !important;
+  margin: 1em;
 }

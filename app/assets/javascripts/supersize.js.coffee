@@ -12,15 +12,19 @@ imgResizer = () ->
   winRatio = ( div.width() / div.height() ).toFixed(2)
 
   if winRatio > imgRatio
-    bgimg.width(div.width())
-    bgimg.height(div.width() / imgRatio)
+    bgimg.width( div.width() )
+    bgimg.height( div.width() / imgRatio )
   else
-    bgimg.height(div.height())
-    bgimg.width(div.height() * imgRatio)
+    bgimg.height( div.height() )
+    bgimg.width( div.height() * imgRatio )
+
+# If I decide to mess with turbolinks:
+# first, add //= require turbolinks back to application.js
+#$(document).on "page:change", ->
+#  imgResizer()
 
 window.onload = () ->
   imgResizer()
-  
 
 $(window).resize ->
   imgResizer()

@@ -9,9 +9,9 @@ sidebarSmallScreenHider = () ->
   else
     $("#wrapper").addClass("show-sidebar")
 
+
 $('#wrapper').ready ->
   sidebarSmallScreenHider()
-  wrap_height = $('#wrapper').height()
   
 $(window).resize ->
   sidebarSmallScreenHider()

@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
   <title>Locodi | <%= @page_title %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body >
-  <div class="banner-title row">
-    <div class="col-xs-12">
-      <%= render 'banner_title' %>
-    </div>
-  </div>
-
+  <%= render 'banner_title' %>
+    
   <div id="wrapper" class="show-sidebar">
     
     <%= render 'sidebar' %>

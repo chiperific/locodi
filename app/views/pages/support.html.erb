@@ -1,2 +1,50 @@
-<h1>Pages#support</h1>
-<p>Find me in app/views/pages/support.html.erb</p>
+<div class="supersized">
+  <%= image_tag 'crouching_sand_cropped.jpg', class: "supersized-image" %>
+</div>
+
+<div class="content-block row donate-image-block">
+  <div class="col-xs-12">
+    <div class="well donate-image-well">
+      <h3 class="text-center">Donation block</h3>
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="support-chooser">
+            <li>Support Amt #1 - $</li>
+            <li>Support Amt #2 - $</li>
+            <li>Support Amt #3 - $</li>
+            <li>Support Amt #4 - $</li>
+            <li>Support Amt #5 - $</li>
+          </ul>
+
+          <ul>
+            <li>Name</li>
+            <li>Email</li>
+            <li>Credit Card</li>
+          </ul>
+        </div>
+      
+
+        <div class="col-sm-6">
+          <div class="donate-image-div">
+            <%= image_tag 'ugandan_child.jpg', class: "donate-image" %>
+          </div>
+
+          <%= link_to "Donate", "https://www.google.com", class: "btn btn-lg btn-primary donate-btn", target: "blank" %>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</div>
+
+<div class="content-block row">
+  <div class="col-xs-12">
+    <div class="well">
+      <h4 class="text-center">Donation thank you message</h4>
+      <p class="text-center">
+        <%= lorem_ipsum(250) %>
+      </p>
+    </div>
+  </div>
+</div>

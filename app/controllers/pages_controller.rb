@@ -2,26 +2,32 @@ class PagesController < ApplicationController
   def home
     @page_title = "Home"
     @page_finder = "home"
+    @banner_title = "LOCODI"
+    @banner_tag = "The tagline of the century"
   end
 
   def work
     @page_title = "Our Work"
     @page_finder = "work"
+    @banner_title = "Our Work"
   end
 
   def leaders
-    @page_title = "Our Leaders"
+    @page_title = "Leaders"
     @page_finder = "leaders"
+    @banner_title = "Our Leaders"
   end
 
   def history
     @page_title = "History"
     @page_finder = "history"
+    @banner_title = "Our History"
   end
 
   def support
     @page_title = "Support Us"
     @page_finder = "support"
+    @banner_title = "Support Our Work"
   end
 
   def calendar

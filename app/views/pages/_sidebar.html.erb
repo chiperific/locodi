@@ -5,25 +5,25 @@
 
   <ul id="sidebar_ul">
     <li id="home">
-      <%= icon('home') %> Home
+      <%= link_to icon('home') + " Home", root_path  %>
     </li>
     <li id="work" >
-      <%= icon('fire') %> Work
+      <%= link_to icon('fire') + " Work", work_path  %>
     </li>
     <li id="leaders" class="sub-menu">
-      <%= icon('gavel') %> Board
+      <%= link_to icon('gavel') + " Board", leaders_path %>
     </li>
     <li id="history" >
-      <%= icon('history') %> History
+      <%= link_to icon('history') + " History", history_path %>
     </li>
     <li id="support" >
-      <%= icon('group') %> Support
+      <%= link_to icon('group') + " Support", support_path %>
     </li>
     <li id="calendar">
-      <%= icon('calendar') %> Events
+      <%= link_to icon('calendar') + " Events", calendar_path %>
     </li>
     <li id="social" >
-      <%= icon('share-alt') %> Social
+      <%= link_to icon('share-alt') + " Social", social_path %>
     </li>
   </ul>
 </div>
