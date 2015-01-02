@@ -4,4 +4,7 @@ Website for Locodi.org
 
 
 ** Issues:
-* Wrapper height is not true to div
+*
+
+** Efficiency:
+* Find a non-dB way of looping over leaders in a partial

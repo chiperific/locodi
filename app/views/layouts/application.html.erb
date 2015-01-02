@@ -11,7 +11,7 @@
 <body >
   <%= render 'banner_title' %>
     
-  <div id="wrapper" class="show-sidebar">
+  <div id="wrapper" class="show-sidebar container-fluid">
     
     <%= render 'sidebar' %>
 
@@ -23,8 +23,16 @@
       </div>
 
     </div>
+
+    <% if @page_finder == "history" %>
+      <div id="history_div" class="container-fluid">
+        <div id="history_fade" class="row"></div>
+        <div id="history_nav">
+          <%= render 'history_nav' %>
+        </div>
+      </div>
+    <% end %>
   </div>
-  
   
 
   <footer class="footer">

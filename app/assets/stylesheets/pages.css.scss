@@ -14,8 +14,10 @@ div.content-block div.well {
   padding: 1em;
 }
 
+
+
 // Center the Content titles
-h3 {
+h3, h4 {
   text-align: center;
 }
 
@@ -37,3 +39,34 @@ div.story-head {
   display: block !important;
   margin: 1em;
 }
+
+// styling for work page
+
+
+// styling for leaders page
+.leader-well {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+div.content-block {
+  // Center wells on leaders page
+  text-align: center;
+}
+
+.well-center {
+  // Center wells on leaders page
+  display: inline-block;
+  float: none !important;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.leader-bio, .leader-photo {
+  padding: 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Styling for history page:

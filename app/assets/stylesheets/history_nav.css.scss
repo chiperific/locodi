@@ -1,0 +1,69 @@
+// Styling for History_nav partial that appears inside wrapper on history page.
+$pri-clr: rgba(248,237,217,1); //beige
+$pri-clr-trans: rgba(248,237,217,.5); //beige
+
+$ter-clr-1: rgba(231,167,159,1); //lt red
+
+#history_div {
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  //margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#history_fade {
+  //background-color: $ter-clr-1;
+  //border: solid 2px black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 25px;
+  z-index: 4;
+  background: -moz-linear-gradient(top, rgba(248,237,217,0) 0%, rgba(248,237,217,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,237,217,0)), color-stop(100%,rgba(248,237,217,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8edd9', endColorstr='#f8edd9',GradientType=0 ); /* IE6-9 */
+}
+
+#history_nav {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: $pri-clr;
+  padding-top: 10px;
+  padding-bottom: 3em;
+}
+
+.slider-label {
+  text-align: center;
+  width: 14%;
+  
+  a {
+    font-size: .85em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+#slider {
+  width: 85%;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 700px ) {
+  #history_div {
+    display: none;
+  }
+}
+
+#history_nav_spacer {
+  height: 100px;
+}

@@ -1,3 +1,22 @@
 <div class="banner-img-div">
   <%= image_tag 'wheat_field_banner.jpeg', class: "banner-img" %>
 </div>
+
+
+<div class="row content-block spacing">
+  <div class="col-xs-12 col-md-3">
+    <%= image_tag placeholder_image(200) %>
+    <p>Chart explanation</p>
+  </div>
+
+  <div class="col-xs-12 col-md-5">
+    <h4>We work pretty hard</h4>
+    <p><%= lorem_ipsum(800).html_safe %></p>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <%= image_tag placeholder_image(300) %>
+    <p>Map explanation</p>
+  </div>
+    
+</div>
