@@ -38,5 +38,6 @@ class PagesController < ApplicationController
   def social
     @page_title = "Social"
     @page_finder = "social"
+    @banner_title = "The Latest"
   end
 end
