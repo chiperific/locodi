@@ -1,6 +1,10 @@
 # for pages with background images, auto-fit the image to the screen 
 # on window load and resize
 
+pageBodyResizer = () ->
+  bannerHeight = $('#banner_title').height() + 28
+  winHeight = $(window).height()
+  $('#page_body').height(winHeight - bannerHeight)
 
 bannerResizer = () ->
   # Match the banner's div to the size of the banner_title dive
@@ -43,21 +47,19 @@ imgResizer = () ->
 
 historyNavSetter = () ->
   urlId = location.hash.substring(1)
-  target = $('a.slider-btn#'+ urlId + '_btn')
-  parentLi = $(target).parent('li')
-  parentLi.siblings().removeClass('active')
-  parentLi.addClass('active')
-  $('#slider').slider('value', urlId)
-
-# If I decide to mess with turbolinks:
-# first, add //= require turbolinks back to application.js
-#$(document).on "page:change", ->
-#  imgResizer()
+  if urlId != ""
+    $('#page_body').scrollTo( $('#'+ urlId) )
+    target = $('a.slider-btn#'+ urlId + '_btn')
+    parentLi = $(target).parent('li')
+    parentLi.siblings().removeClass('active')
+    parentLi.addClass('active')
+    $('#slider').slider('value', urlId)
 
 window.onload = () ->
   imgResizer()
   bannerResizer()
   historyNavSetter()
+  pageBodyResizer()
 
 window.onhashchange = () ->
   historyNavSetter()
@@ -65,3 +67,9 @@ window.onhashchange = () ->
 $(window).resize ->
   imgResizer()
   bannerResizer()
+  pageBodyResizer()
+
+# If I decide to mess with turbolinks:
+  # first, add //= require turbolinks back to application.js
+  #$(document).on "page:change", ->
+  #  imgResizer()

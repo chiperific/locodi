@@ -4,10 +4,10 @@
 $sec-clr: rgba(136,164,210,1); //lt blue
 $quat-clr: rgba(32,56,111,1); //dk blue
 
-// Set a min-height for Content blocks
+// Set a styling for wells inside content-blocks
 div.content-block div.well {
   min-height: 10em;
-  height: 100%;
+  height: inherit;
   background-color: rgba(255,255,255,0.3);
   border-radius: 12px;
   border: none;

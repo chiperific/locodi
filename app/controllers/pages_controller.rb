@@ -28,8 +28,6 @@ class PagesController < ApplicationController
     @page_finder = "history"
     @banner_title = "Our History"
 
-    @div_nav_pos = params[:anchor]
-
     # image placeholders don't currently fit to width on small screens
     # Find a non-dB way of looping over history in a partial
   end

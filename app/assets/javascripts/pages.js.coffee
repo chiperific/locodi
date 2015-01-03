@@ -20,12 +20,11 @@ $ ->
       parentLi = $(target).parent('li')
       parentLi.siblings().removeClass('active')
       parentLi.addClass('active')
-      location.hash = val
+      # scroll the apropriate header into view in #page_body
+      $('#page_body').scrollTo( $('#'+ val), { duration: 1000 } )
   }
 
-  # history page actions:
-
-  #style the slider nav btns on click
+  #slider nav links on click
   $('.slider-btn').click ->
     parentLi = $(this).parent('li')
     parentLi.siblings().removeClass('active')
@@ -33,13 +32,8 @@ $ ->
     #change the slider position
     hrefId = $(this).attr('id').substring(0,1)
     $('#slider').slider('value', hrefId)
-
-historyNavSetter = () ->
-  urlId = location.hash.substring(1)
-  target = $('a.slider-btn#'+ urlId + '_btn')
-  parentLi = $(target).parent('li')
-  parentLi.siblings().removeClass('active')
-  parentLi.addClass('active')
-  $('#slider').slider('value', urlId)
+    # scroll the apropriate header into view in #page_body
+    $('#page_body').scrollTo( $('#'+ hrefId), { duration: 1000 } )
+    event.preventDefault()
 
 
