@@ -5,6 +5,17 @@ pageBodyResizer = () ->
   bannerHeight = $('#banner_title').height() + 28
   winHeight = $(window).height()
   $('#page_body').height(winHeight - bannerHeight)
+  # make #page_body a scrollable div and freeze html and body
+  # this only triggers on the history page 
+  # ( location.pathname == "/history" || location.pathname == "/social") && 
+  if $(window).height() > 400
+    $('html').addClass('overflow-hidden')
+    $('body').addClass('overflow-hidden')
+    $('#page_body').addClass('overflowy-scroll')
+  else
+    $('html').removeClass('overflow-hidden')
+    $('body').removeClass('overflow-hidden')
+    $('#page_body').removeClass('overflowy-scroll')
 
 bannerResizer = () ->
   # Match the banner's div to the size of the banner_title dive
@@ -60,9 +71,6 @@ window.onload = () ->
   bannerResizer()
   historyNavSetter()
   pageBodyResizer()
-
-window.onhashchange = () ->
-  historyNavSetter()
 
 $(window).resize ->
   imgResizer()

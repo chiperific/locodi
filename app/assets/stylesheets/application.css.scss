@@ -54,6 +54,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+// added to html,body on History page
+.overflow-hidden {
   overflow: hidden;
 }
 
@@ -90,12 +94,16 @@ body {
   display: block;
   padding-left: 35px;
   z-index: 1;
-  overflow-y: scroll; 
+}
+
+// added to page_body on History page
+.overflowy-scroll {
+  overflow-y: scroll;
 }
 
 // Give me some space!
 .spacing {
-  margin: 2em;
+  margin-top: 2em;
 }
 
 

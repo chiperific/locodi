@@ -64,7 +64,7 @@ $sec-clr: rgba(136,164,210,1); //lt blue
 }
 
 @media (max-width: 700px ) {
-  #history_div {
+  #history_div, .history-img {
     display: none;
   }
 }
