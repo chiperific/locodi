@@ -41,6 +41,14 @@ imgResizer = () ->
     bgimg.height( div.height() )
     bgimg.width( div.height() * imgRatio )
 
+historyNavSetter = () ->
+  urlId = location.hash.substring(1)
+  target = $('a.slider-btn#'+ urlId + '_btn')
+  parentLi = $(target).parent('li')
+  parentLi.siblings().removeClass('active')
+  parentLi.addClass('active')
+  $('#slider').slider('value', urlId)
+
 # If I decide to mess with turbolinks:
 # first, add //= require turbolinks back to application.js
 #$(document).on "page:change", ->
@@ -49,6 +57,10 @@ imgResizer = () ->
 window.onload = () ->
   imgResizer()
   bannerResizer()
+  historyNavSetter()
+
+window.onhashchange = () ->
+  historyNavSetter()
 
 $(window).resize ->
   imgResizer()
