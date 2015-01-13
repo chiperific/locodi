@@ -10,24 +10,16 @@ Website for Locodi.org
 ** Efficiency:
 * Find a non-dB way of looping over leaders in a partial
 
-* Email integration
-* -> Capture email addresses
-* -> Manage an email list
-  ** http://mailchimp.com/pricing/entrepreneur/
-* -> "Show me the list"
-* -> Opt-out / unsubscribe?
-* Forward to theolupots@gmail.com
 
-* Join us page:
-  ** info - info@
-  ** newsletter - newsletter@
-  ** work with us - join@
+** embracingthelove.blogspot.com
+* https://developers.google.com/gdata/samples/blogger_sample
 
-* Separate pages for Kingdom Life?
-* Change history to work
-  ** photos from Ruudy w/ title and text
-
-* Check for paypal scamming issue - false credit card checks.
-
-* embracingthelove.blogspot.com
-** https://developers.google.com/gdata/samples/blogger_sample
+** Next up:
+1. Design the join page
+2. Integrate the blog feed into the homepage
+3. Feed the google calendar into the Events page.
+4. Set up the Social page with the correct login info from Rebelmouse 
+5. Create the 3 emails (info, newsletter, and join) at Zoho
+5. Integrate the email and form for capturing email.
+6. Research and integrate mailchimp
+7. Research and integrate paypal (maybe add a captcha to avoid the credit card check scam)
