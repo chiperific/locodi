@@ -2,6 +2,8 @@
 
 Website for Locodi.org
 
+! Start the server using 'unicorn', http://localhost:8080/
+
 ** Issues:
 *
 
