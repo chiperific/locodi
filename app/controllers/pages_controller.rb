@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @page_finder = "home"
     @banner_title = "LOCODI"
     @banner_tag = "The tagline of the century"
+
+    #@blog = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default/"))
+    #@blog_1_title = @blog.xpath("//title").first
+    
   end
 
   def work
@@ -12,6 +16,7 @@ class PagesController < ApplicationController
     @banner_title = "Our Work"
 
     # image placeholders don't currently fit to width on small screens
+    # Find a non-dB way of looping over history in a partial
   end
 
   def leaders
@@ -23,19 +28,15 @@ class PagesController < ApplicationController
     # Find a non-dB way of looping over leaders in a partial
   end
 
-  def history
-    @page_title = "History"
-    @page_finder = "history"
-    @banner_title = "Our History"
-
-    # image placeholders don't currently fit to width on small screens
-    # Find a non-dB way of looping over history in a partial
-  end
-
   def support
     @page_title = "Support Us"
     @page_finder = "support"
     @banner_title = "Support Our Work"
+  end
+
+  def join
+    @page_title = "Join Us"
+    @page_finder = "join"
   end
 
   def calendar

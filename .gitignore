@@ -12,3 +12,7 @@
 !/log/.keep
 /tmp
 /config/secrets.yml
+
+# Ignore the RVM stuff
+/.ruby-gemset
+/.ruby-version
