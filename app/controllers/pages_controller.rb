@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     @page_title = "Home"
     @page_finder = "home"
     @banner_title = "LOCODI"
-    @banner_tag = "The tagline of the century"
+    @banner_tag = "Loveworld Community Development Initiative"
 
     #@blog = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default/"))
     #@blog_1_title = @blog.xpath("//title").first
@@ -37,6 +37,11 @@ class PagesController < ApplicationController
   def join
     @page_title = "Join Us"
     @page_finder = "join"
+  end
+
+  def sponsor
+    @page_title = "Sponsor a Child"
+    @page_finder = "sponsor"
   end
 
   def calendar

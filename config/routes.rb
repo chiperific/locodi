@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  match 'work', to: 'pages#work', via: :get
-  match 'leaders', to: 'pages#leaders', via: :get
-  match 'support', to: 'pages#support', via: :get
-  match 'join', to: 'pages#join', via: :get
-  match 'social', to: 'pages#social', via: :get
-  match 'calendar', to: 'pages#calendar', via: :get
+  get 'work', to: 'pages#work'
+  get 'leaders', to: 'pages#leaders'
+  get 'support', to: 'pages#support'
+  get 'join', to: 'pages#join'
+  get 'sponsor', to: 'pages#sponsor'
+  get 'social', to: 'pages#social'
+  get 'calendar', to: 'pages#calendar'
 
   get "*path", to:  'pages#home'
 end
