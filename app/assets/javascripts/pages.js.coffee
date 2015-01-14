@@ -13,7 +13,7 @@ $ ->
     range: "min"
     value: 1
     min: 1
-    max: 7
+    max: 6
     step: 1
     change: () ->
       val = $('#slider').slider('value')
