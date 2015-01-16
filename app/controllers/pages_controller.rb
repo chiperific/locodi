@@ -5,8 +5,9 @@ class PagesController < ApplicationController
     @banner_title = "LOCODI"
     @banner_tag = "Loveworld Community Development Initiative"
 
-    #@blog = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default/"))
-    #@blog_1_title = @blog.xpath("//title").first
+    require 'open-uri'
+    @blog_page = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default"))
+    @blogs = @blog_page.css('entry')[0..5]
     
   end
 

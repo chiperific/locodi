@@ -37,4 +37,7 @@ $ ->
     $('#page_body').scrollTo( $('#'+ hrefId), { duration: 1000 } )
     event.preventDefault()
 
+  # Home page: Blog images get an added align="left" attribute
+  $('.separator').children('a').children('img').attr('align', 'left')
+
 

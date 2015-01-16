@@ -2,34 +2,41 @@
   <%= image_tag 'soccer.jpg', class: "supersized-image" %>
 </div>
 
-<div class="content-block row">
+<div class="content-block row well well-trans">
   <div class="col-sm-6">
-    <div class="well">
-      <h3>
-        Raising an empowered generation
-      </h3>
-      <p class="align-left"> 
-        LOCODI was started by a group of passionate Christians in Soroti, Uganda. We are creating a new generation of citizens that are focused on compassion and demonstrating Christ's love. We invite you to become a part of our work. 
-        <br>
-        <%= link_to "Join us today!", join_path %>
-      </p>
-    </div>
+    <h3>
+      Raising an empowered generation...
+    </h3>
+    <p class=""> 
+      LOCODI was started by a group of passionate Christians in Soroti, Uganda. We are creating a new generation of citizens that are focused on compassion and demonstrating Christ's love. We invite you to become a part of our work. 
+      <%= link_to "Join us today!", join_path %>
+    </p>
   </div>
 
   <div class="col-sm-6">
-    <div class="well">
-      <h3>
-        Full of God's love and compassion
-      </h3>
-      <p class="align-left">
-        We are all important parts of one body. We need each other and together, we can do something big for the Kingdom of God. Kindly consider <%= link_to "joining us today", join_path %> through <%= link_to "prayers", social_path %>, a <%= link_to "financial gift", support_path %> or a <%= link_to "vision trip", join_path %>  to check out we do and how you could to help.
-      </p>
-    </div>
+    <h3>
+      ...full of God's love and compassion.
+    </h3>
+    <p class="">
+      We are all important parts of one body. We need each other. And together, we can do something big for the Kingdom of God. Kindly consider <%= link_to "joining us today", join_path %> through <%= link_to "prayers", social_path %>, a <%= link_to "financial gift", support_path %> or a <%= link_to "vision trip", join_path %> to check out what we do and how you could to help.
+    </p>
   </div>
 </div>
 
-<div class="content-block row">
-  <div class="well">
-    <h4>Blog stuff!</h4>
+<% if !@blogs.empty? %>
+  <div class="content-block row">
+    <div class="well">
+      <h2>
+        <%= @blog_page.css('title').first.text.to_s.humanize %>: the latest from 
+        <%= link_to "our blog", "http://embracingthelove.blogspot.com", target: :blank %>.
+      </h2>
+      <h4>
+        <%= @blog_page.css('subtitle').text %>?
+      </h4>
+        <% for blog in @blogs %>
+          <%= render 'blog_div', blog: blog %>
+        <% end %>
+    </div>
   </div>
-</div>
+<% end %>
+  

@@ -14,19 +14,25 @@ div.content-block div.well {
   padding: 1em;
 }
 
+.well-trans {
+  border: none !important;
+  border-radius: 12px !important;
+  background-color: rgba(255,255,255,0.65) !important;
+}
 
+// Styling for home page:
 
 // Center the Content titles
 h3, h4 {
   text-align: center;
 }
 
-// Center the Story titles
-div.story-head {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.blog-entry .separator img {
+  //float: left !important;
+  margin: 1em;
 }
+
+// Styling for support page:
 
 // donate-image and donate-btn styling:
 .donate-image {
