@@ -18,7 +18,7 @@
       ...full of God's love and compassion.
     </h3>
     <p class="">
-      We are all important parts of one body. We need each other. And together, we can do something big for the Kingdom of God. Kindly consider <%= link_to "joining us today", join_path %> through <%= link_to "prayers", social_path %>, a <%= link_to "financial gift", support_path %> or a <%= link_to "vision trip", join_path %> to check out what we do and how you could to help.
+      We are all important parts of one body. We need each other. And together, we can do something big for the Kingdom of God. Kindly consider <%= link_to "joining us", join_path %> through <%= link_to "prayers", social_path %>, a <%= link_to "financial gift", support_path %> or a <%= link_to "vision trip", join_path %> to check out what we do and how you could to help.
     </p>
   </div>
 </div>
@@ -33,9 +33,12 @@
       <h4>
         <%= @blog_page.css('subtitle').text %>?
       </h4>
-        <% for blog in @blogs %>
-          <%= render 'blog_div', blog: blog %>
-        <% end %>
+      <% for blog in @blogs %>
+        <%= render 'blog_div', blog: blog %>
+      <% end %>
+      <p class="text-right">
+        <%= link_to "Read more on our blog #{icon('arrow-right')}".html_safe, "http://embracingthelove.blogspot.com", target: :blank %>
+      </p>
     </div>
   </div>
 <% end %>

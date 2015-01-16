@@ -26,5 +26,5 @@ Website for Locodi.org
 5. Create the 3 emails (info, newsletter, and join) at Zoho
 5. Integrate the email and form for capturing email.
 6. Research and integrate mailchimp
-7. Research and integrate paypal (maybe add a captcha to avoid the credit card check scam)
+7. Research and integrate paypal
 8. Change up (and compress) the photos as requested
