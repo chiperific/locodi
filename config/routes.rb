@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'leaders', to: 'pages#leaders'
   get 'support', to: 'pages#support'
   get 'join', to: 'pages#join'
-  get 'sponsor', to: 'pages#sponsor'
   get 'social', to: 'pages#social'
   get 'calendar', to: 'pages#calendar'
 

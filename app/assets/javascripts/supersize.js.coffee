@@ -6,8 +6,6 @@ pageBodyResizer = () ->
   winHeight = $(window).height()
   $('#page_body').height(winHeight - bannerHeight)
   # make #page_body a scrollable div and freeze html and body
-  # this only triggers on the history page 
-  # ( location.pathname == "/history" || location.pathname == "/social") && 
   if $(window).height() > 400
     $('html').addClass('overflow-hidden')
     $('body').addClass('overflow-hidden')

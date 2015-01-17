@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-
   page = $('#sidebar_page_finder').html().trim()
   $('#sidebar_ul').children('li').removeClass("active")
   active_element = $('#sidebar_ul').find('#' + page)
@@ -39,5 +38,3 @@ $ ->
 
   # Home page: Blog images get an added align="left" attribute
   $('.separator').children('a').children('img').attr('align', 'left')
-
-

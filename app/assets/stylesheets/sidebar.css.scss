@@ -47,7 +47,10 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
     a {
       display: block;
       color: #222222;
-      text-decoration: none; 
+      text-decoration: none;
+      .fa-fw {
+        width: 24px;
+      } 
     }
 
     a:hover {
@@ -59,11 +62,6 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
     a:active, a:focus {
       text-decoration: none;
     }
-  }
-
-  .sub-menu {
-    margin-top: -.5em;
-    margin-left: .75em;
   }
   .active {
     background-color: $ter-clr-2;
