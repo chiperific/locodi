@@ -29,14 +29,15 @@ class PagesController < ApplicationController
     # Find a non-dB way of looping over leaders in a partial
   end
 
+  def support
+    @page_title = "Support"
+    @page_finder = "support"
+    @banner_title = "Support our Work"
+  end
+
   def join
     @page_title = "Join Us"
     @page_finder = "join"
-  end
-
-  def sponsor
-    @page_title = "Sponsor a Child"
-    @page_finder = "sponsor"
   end
 
   def calendar
