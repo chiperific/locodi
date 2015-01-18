@@ -110,6 +110,10 @@ html, body {
   overflow: hidden;
 }
 
+.display-none {
+  display: none;
+}
+
 body {
   background-color: $pri-clr;
   margin-bottom: 5%;
@@ -126,6 +130,27 @@ body {
 .banner-title h1, p {
   text-align: center;
   color: #333333;
+}
+
+// Styling for blog page (inside banner_title partial)
+#blog_nav {
+  //display: block;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.blog-nav-btn {
+  width: 16.6%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Hide blog titles in buttons on small screen widths
+@media (max-width: 400px) {
+  .blog-ttl {
+    display: none;
+  }
 }
 
 #wrapper {

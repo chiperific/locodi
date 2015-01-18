@@ -5,9 +5,7 @@ class PagesController < ApplicationController
     @banner_title = "LOCODI"
     @banner_tag = "Loveworld Community Development Initiative"
 
-    require 'open-uri'
-    @blog_page = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default"))
-    @blogs = @blog_page.css('entry')[0..5]
+    
     
   end
 
@@ -43,6 +41,18 @@ class PagesController < ApplicationController
   def calendar
     @page_title = "Events"
     @page_finder  = "calendar"
+  end
+
+  def blog
+    @page_title = "Blog"
+    @page_finder = "blog"
+
+    require 'open-uri'
+    @blog_page = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default"))
+    @blogs = @blog_page.css('entry')[0..5]
+
+    @banner_title = "From our blog: " + @blog_page.css('title').first.text.split.map(&:capitalize).join(' ') 
+    @banner_tag = @blog_page.css('subtitle').text
   end
 
   def social

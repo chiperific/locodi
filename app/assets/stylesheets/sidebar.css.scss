@@ -74,12 +74,11 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 // The div actually lives on application.html.erb
 #sidebar_button {
   position: absolute;
-  top: 60%;
   left: 0;
   width: 20px;
   height: 40px;
   line-height: 40px;
-  //margin-left: -25px;
+  margin-top: 10px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 6px;

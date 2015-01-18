@@ -1,0 +1,14 @@
+<div class="banner-img-div">
+  <%= image_tag 'child_reading.jpg', class: "banner-img" %>
+</div>
+
+<% if !@blogs.empty? %>
+  <div class="content-block row">
+    <% @blogs.each_with_index do |blog, index| %>
+      <%= render 'blog_div', blog: blog, index: index %>
+    <% end %>
+    <p class="text-right">
+      <%= link_to "Read more on our blog #{icon('arrow-right')}".html_safe, "http://embracingthelove.blogspot.com", target: :blank %>
+    </p>
+  </div>
+<% end %>

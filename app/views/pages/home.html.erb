@@ -23,23 +23,5 @@
   </div>
 </div>
 
-<% if !@blogs.empty? %>
-  <div class="content-block row">
-    <div class="well">
-      <h2>
-        <%= @blog_page.css('title').first.text.to_s.humanize %>: the latest from 
-        <%= link_to "our blog", "http://embracingthelove.blogspot.com", target: :blank %>.
-      </h2>
-      <h4>
-        <%= @blog_page.css('subtitle').text %>?
-      </h4>
-      <% for blog in @blogs %>
-        <%= render 'blog_div', blog: blog %>
-      <% end %>
-      <p class="text-right">
-        <%= link_to "Read more on our blog #{icon('arrow-right')}".html_safe, "http://embracingthelove.blogspot.com", target: :blank %>
-      </p>
-    </div>
-  </div>
-<% end %>
+
   

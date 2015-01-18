@@ -10,10 +10,12 @@ pageBodyResizer = () ->
     $('html').addClass('overflow-hidden')
     $('body').addClass('overflow-hidden')
     $('#page_body').addClass('overflowy-scroll')
+    $('#blog_nav').removeClass('display-none')
   else
     $('html').removeClass('overflow-hidden')
     $('body').removeClass('overflow-hidden')
     $('#page_body').removeClass('overflowy-scroll')
+    $('#blog_nav').addClass('display-none')
 
 bannerResizer = () ->
   # Match the banner's div to the size of the banner_title dive
@@ -22,7 +24,6 @@ bannerResizer = () ->
   bnrImgDiv = $('.banner-img-div')
   bnrImgDiv.height( targetHeight )
   bnrImgDiv.width( targetWidth )
-
   # Size the banner image apropriately
   bnrImg = $('.banner-img')
   origHeight = bnrImg.height()
@@ -37,6 +38,7 @@ bannerResizer = () ->
   else
     bnrImg.height( targetHeight )
     bnrImg.width( targetHeight * imgRatio )
+
 
 imgResizer = () ->
   div = $('.supersized')

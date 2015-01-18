@@ -5,4 +5,15 @@
       <p class="banner-tag"><%= @banner_tag %></p>
     <% end %>
   </div>
+  <% if @page_finder == "blog" %>
+    <div class="btn-group row" id="blog_nav">
+      <% @blogs.each_with_index do |blog, index| %>
+        <button id="<%= index.to_s + "_btn" %>" type="button" class="blog-nav-btn btn btn-default">
+          <span class="blog-num"><%= (index + 1).to_s %></span>
+          <span class="blog-ttl"><%= "- " + blog.css('title').text %></span>
+          
+        </button>
+      <% end %>
+    </div>
+  <% end %>
 </div>

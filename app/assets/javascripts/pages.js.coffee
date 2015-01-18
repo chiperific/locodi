@@ -32,5 +32,10 @@ $ ->
     $('#page_body').scrollTo( $('#'+ hrefId), { duration: 1000 } )
     event.preventDefault()
 
-  # Home page: Blog images get an added align="left" attribute
+  # Blog: scrollTo div on nav-btn click
+  $('.blog-nav-btn').click ->
+    blogId = $(this).attr('id').substring(0,1)
+    $('#page_body').scrollTo( $('#'+ blogId), { duration: 1000 } )
+
+  # Blog images get an added align="left" attribute
   $('.separator').children('a').children('img').attr('align', 'left')

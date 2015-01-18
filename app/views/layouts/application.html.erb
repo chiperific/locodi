@@ -16,12 +16,12 @@
     <%= render 'layouts/sidebar' %>
 
     <div id="page_body" class="container-fluid">
-      <%= yield %>
-    
       <div id="sidebar_button">
         <%= link_to( icon('angle-double-left fa-2x'), "#", id: "sidebar_toggle") %>
       </div>
 
+      <%= yield %>
+      
     </div>
 
     <% if @page_finder == "work" %>

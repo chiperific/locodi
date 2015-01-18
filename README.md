@@ -12,7 +12,7 @@ Website for Locodi.org
 
 
 ** Next up:
-1. Target: :blank on mail_to?
+1. Move blog to own page
 4. Get RebelMouse working as expected
 5. Create the 'info' email at Zoho
 6. Research and integrate MailChimp - https://rubygems.org/gems/mailchimp-api
