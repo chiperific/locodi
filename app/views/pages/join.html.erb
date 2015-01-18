@@ -1,3 +1,65 @@
 <div class="banner-img-div">
   <%= image_tag 'kids_playing.jpg', class: "banner-img" %>
 </div>
+
+<div class="row">
+  <h3>There are many ways to get involved in our work</h3>
+</div>
+
+<div class="row content-block">
+  <div class="col-xs-12 col-sm-6">
+    <div class="well styled-links">
+      <%= icon('plane fa-4x') %> 
+      <h4>Take a Vision Trip</h4>
+      <p class="align-left">
+        <%= lorem_ipsum(200) %>
+      </p>
+      <p>
+        <%= mail_to "info@locodi.org", "Contact us about a Vision Trip", subject: "I'm interested in a Vision Trip!", encode: "hex" %>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="well styled-links">
+      <%= icon('child fa-4x') %> 
+      <h4>Sponsor a Child</h4>
+      <p class="align-left">
+        <%= lorem_ipsum(200) %>
+      </p>
+      <p>
+        <%= mail_to "info@locodi.org", "Contact us about Sponsoring a Child", subject: "I'm interested in sponsoring a child!", encode: "hex" %>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="well styled-links">
+      <%= icon('group fa-4x') %> 
+      <h4>Volunteer with Locodi</h4>
+      <p class="align-left">
+        <%= lorem_ipsum(200) %>
+      </p>
+      <p>
+        <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex" %>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="well unstyled-links">
+      <%= link_to "#{icon('envelope fa-4x')}".html_safe, support_path %>
+      <%= link_to "<h4>Provide Financial Support</h4>".html_safe, support_path %>
+      <p class="align-left">
+        <%= lorem_ipsum(200) %>
+      </p>
+      <p>
+        <%= link_to "Show your Support Today", support_path %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h4>Form goes here</h4>
+</div>

@@ -60,9 +60,7 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
-  # Ignore bad email addresses and do not raise email delivery errors.
-  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -76,4 +74,29 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Ignore bad email addresses and do not raise email delivery errors.
+  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+  # config.action_mailer.raise_delivery_errors = false
+#  config.action_mailer.default_url_options = { :host => 'locodi.org' }
+#
+#  # if error in Heroku: ActionView::Template::Error: Missing host to link to!
+#  # Rails.application.routes.default_url_options[:host] = 'locodi.org'
+#  config.action_mailer.delivery_method = :smtp
+#  config.action_mailer.perform_deliveries = true
+#  config.action_mailer.raise_delivery_errors = false
+#  config.action_mailer.default :charset => "utf-8"
+#
+#  # Zoho info goes here:
+#  config.action_mailer.smtp_settings = {
+#    address: "smtp.gmail.com",
+#    port: 587,
+#    domain: ENV["EMAIL_DOMAIN"],
+#    authentication: "plain",
+#    enable_starttls_auto: true,
+#    user_name: ENV["EMAIL_USERNAME"],
+#    password: ENV["EMAIL_PASSWORD"]
+#  }
+
+  # heroku config:add EMAIL_PASSWORD=Gha1ecr0w EMAIL_USERNAME=chiperific@gmail.com EMAIL_DOMAIN=gmail.com
 end

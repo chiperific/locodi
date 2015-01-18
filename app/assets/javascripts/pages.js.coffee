@@ -3,11 +3,13 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+  # handle sidebar page highlighting
   page = $('#sidebar_page_finder').html().trim()
   $('#sidebar_ul').children('li').removeClass("active")
   active_element = $('#sidebar_ul').find('#' + page)
   active_element.addClass("active")
 
+  # Style the slider on Work page
   $('#slider').slider {
     range: "min"
     value: 1

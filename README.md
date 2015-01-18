@@ -11,20 +11,23 @@ Website for Locodi.org
 * Find a non-dB way of looping over leaders in a partial
 
 
-** embracingthelove.blogspot.com
-* https://developers.google.com/gdata/samples/blogger_sample
-
 ** Next up:
-1.0 Add text to the homepage --
-1.01 Add blog to the homepage --
-1.1 Update the work page ---
-1.2 Design the join page
-1.3 Design the sponsor page -? maybe not?
-1.5 Work page: the project navbar doesn't extend all the way to the right.
-3. Feed the google calendar into the Events page.
-4. Set up the Social page with the correct login info from Rebelmouse 
-5. Create the 3 emails (info, newsletter, and join) at Zoho
-5. Integrate the email and form for capturing email.
-6. Research and integrate mailchimp
-7. Research and integrate paypal
-8. Change up (and compress) the photos as requested
+4. Get RebelMouse working as expected
+5. Create the 'info' email at Zoho
+6. Research and integrate MailChimp - https://rubygems.org/gems/mailchimp-api
+7. Research and integrate PayPal -- needs to connect to Calvary's bank account? 
+8. Compress the images for faster page loads
+9. Perform final review and testing of the site
+
+email form:
+- Contact
+-- Name
+-- Email
+-- Phone (optional)
+-- Address fields (for international)
+-- Interested in:
+--- Vision trip
+--- Sponsorship
+--- Volunteering
+-- Also sign me up for the Newsletter
+-- Message

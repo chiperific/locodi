@@ -15,3 +15,7 @@
 # Ignore the RVM stuff
 /.ruby-gemset
 /.ruby-version
+
+# Ignore the private stuff
+.env
+Procfile
