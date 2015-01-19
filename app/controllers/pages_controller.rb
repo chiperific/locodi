@@ -58,6 +58,6 @@ class PagesController < ApplicationController
   def social
     @page_title = "Social"
     @page_finder = "social"
-    @banner_title = "Latest Info"
+    @banner_title = "LOCODI Online"
   end
 end
