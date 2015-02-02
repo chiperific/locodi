@@ -1,0 +1,18 @@
+<tr>
+  <td class="text-left">
+    <strong>
+      <%= blog.css('title').text %>
+    </strong>
+  </td>
+  <td>
+    <i class="float-right">
+      <%= Date.parse(blog.css('updated').text).strftime("%m/%d/%Y") %>
+    </i>
+  </td>
+</tr>
+<tr>
+  <td colspan="2" class="text-left">
+    <%= raw blog.css('content').text[0..106] + "..." %>
+  </td>
+</tr>
+  

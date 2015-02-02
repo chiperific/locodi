@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body >
+<body>
   <%= render 'layouts/banner_title' %>
     
   <div id="wrapper" class="show-sidebar container-fluid">
@@ -21,7 +21,7 @@
       </div>
 
       <%= yield %>
-      
+      <div class="page-body-footer-spacer"></div>
     </div>
 
     <% if @page_finder == "work" %>

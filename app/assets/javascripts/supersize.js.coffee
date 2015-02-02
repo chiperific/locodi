@@ -1,18 +1,34 @@
 # for pages with background images, auto-fit the image to the screen 
 # on window load and resize
 
+miniSocialResizer = () ->
+  targetHeight = $('#mini_blog').height()
+  $('#mini_social').height(targetHeight)
+  tableHeight = $('#blog_table').height() + 20
+  $('#rebelmouse-embed-iframe').attr("height", tableHeight)
+  # $('#rebelmouse-embed-iframe').height(tableHeight)
+
+
+# TEMP - if the 3 homepage boxes get removed, remove this function
+boxStandardizer = () ->
+  box1 = $('#box1').height()
+  box2 = $('#box2').height()
+  box3 = $('#box3').height()
+  targetHeight = Math.max(box1, box2, box3)
+  $('#box1').height(targetHeight)
+  $('#box2').height(targetHeight)
+  $('#box3').height(targetHeight)
+
 pageBodyResizer = () ->
   bannerHeight = $('#banner_title').height() + 28
   winHeight = $(window).height()
   $('#page_body').height(winHeight - bannerHeight)
   # make #page_body a scrollable div and freeze html and body
   if $(window).height() > 400
-    $('html').addClass('overflow-hidden')
     $('body').addClass('overflow-hidden')
     $('#page_body').addClass('overflowy-scroll')
     $('#blog_nav').removeClass('display-none')
   else
-    $('html').removeClass('overflow-hidden')
     $('body').removeClass('overflow-hidden')
     $('#page_body').removeClass('overflowy-scroll')
     $('#blog_nav').addClass('display-none')
@@ -56,26 +72,19 @@ imgResizer = () ->
     bgimg.height( div.height() )
     bgimg.width( div.height() * imgRatio )
 
-historyNavSetter = () ->
-  urlId = location.hash.substring(1)
-  if urlId != ""
-    $('#page_body').scrollTo( $('#'+ urlId) )
-    target = $('a.slider-btn#'+ urlId + '_btn')
-    parentLi = $(target).parent('li')
-    parentLi.siblings().removeClass('active')
-    parentLi.addClass('active')
-    $('#slider').slider('value', urlId)
-
-window.onload = () ->
+$(window).load ->
+  pageBodyResizer()
   imgResizer()
   bannerResizer()
-  historyNavSetter()
-  pageBodyResizer()
+  boxStandardizer()
+  miniSocialResizer()
 
 $(window).resize ->
+  pageBodyResizer()
   imgResizer()
   bannerResizer()
-  pageBodyResizer()
+  boxStandardizer()
+  miniSocialResizer()
 
 # If I decide to mess with turbolinks:
   # first, add //= require turbolinks back to application.js

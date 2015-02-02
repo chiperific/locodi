@@ -6,7 +6,9 @@ class PagesController < ApplicationController
     @banner_tag = "Loveworld Community Development Initiative"
 
     
-    
+    require 'open-uri'
+    @blog_page = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default"))
+    @blogs = @blog_page.css('entry')[0..2]
   end
 
   def work

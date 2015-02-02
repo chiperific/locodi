@@ -6,9 +6,9 @@ $quat-clr: rgba(32,56,111,1); //dk blue
 
 // Set a styling for wells inside content-blocks
 div.content-block div.well {
-  min-height: 10em;
+  //min-height: 10em;
   height: inherit;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.6);
   border-radius: 12px;
   border: none;
   padding: 1em;
@@ -26,10 +26,27 @@ div.content-block div.well {
 h3, h4 {
   text-align: center;
 }
+// Except when explicit
+.text-align-left p {
+  text-align: left !important;
+}
 
-.blog-entry .separator img {
-  //float: left !important;
-  margin: 1em;
+.thumbnail {
+  width: 10em;
+  margin: 8px !important;
+}
+
+.image-left {
+  float: left;
+}
+
+.image-right {
+  float: right;
+}
+
+.mini-social-span {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 // Styling for support page:
@@ -76,6 +93,32 @@ div.content-block {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+// Styling for blog page:
+.blog-entry .separator img {
+  margin: 1em;
+}
+
+// inside banner_title partial:
+#blog_nav {
+  //display: block;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.blog-nav-btn {
+  width: 16.6%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Hide blog titles in buttons on small screen widths
+@media (max-width: 400px) {
+  .blog-ttl {
+    display: none;
+  }
 }
 
 // Styling for Social page:

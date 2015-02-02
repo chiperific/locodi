@@ -39,3 +39,8 @@ $ ->
 
   # Blog images get an added align="left" attribute
   $('.separator').children('a').children('img').attr('align', 'left')
+
+  # TEMP Hide the 3 boxes on the homepage
+  $('#toggle_hide_btn').click ->
+    $('.toggle-hide').addClass("hidden")
+    event.preventDefault()

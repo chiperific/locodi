@@ -22,6 +22,8 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
   height: 100%;
   margin-left: -100px;
   overflow: hidden;
+  border-top-right-radius: 6px;
+  z-index: 6;
   background: $ter-clr-2-trans;
   -webkit-transition: all 0.5s ;
   -moz-transition: all 0.5s ;
@@ -37,7 +39,7 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 6;
+  z-index: 7;
 
   li {
     display: block;
@@ -75,10 +77,11 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 #sidebar_button {
   position: absolute;
   left: 0;
-  width: 20px;
+  width: 24px;
   height: 40px;
   line-height: 40px;
   margin-top: 10px;
+  z-index: 7;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 6px;
