@@ -6,8 +6,7 @@ miniSocialResizer = () ->
   $('#mini_social').height(targetHeight)
   tableHeight = $('#blog_table').height() + 20
   $('#rebelmouse-embed-iframe').attr("height", tableHeight)
-  # $('#rebelmouse-embed-iframe').height(tableHeight)
-
+  $('#rebelmouse-embed-iframe').height(tableHeight)
 
 # TEMP - if the 3 homepage boxes get removed, remove this function
 boxStandardizer = () ->

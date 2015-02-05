@@ -12,12 +12,16 @@ Website for Locodi.org
 
 
 ** Next up:
-4. Research sponsorship options
-4.1 -- http://shalomchristianmissions.org/
-4.2 -- https://helpyousponsor.com/
-5. Create the 'info' email at Zoho
-6. Research and integrate MailChimp - https://rubygems.org/gems/mailchimp-api
+6. Create and test the 'info' email at Zoho
+6.1 -- created with ****@kragt.me
+6.2 -- pw: dokolo**
+6.3 -- Needs verification: https://mail.zoho.com/cpanel/verify.do?dname=locodi.org
 7. Research and integrate PayPal
 7.2 -- http://www.gotealeaf.com/blog/basic-paypal-checkout-processing-in-rails
-8. Compress the images for faster page loads
-9. Perform final review and testing of the site
+8. Board page needs pictures and bios
+9. Support page needs payment amounts
+10. Join us page needs content
+11. Need to test Google Calendar events
+12. 3 boxes on homepage (if kept) need content
+13. Compress the images for faster page loads
+14. Perform final review and testing of the site
