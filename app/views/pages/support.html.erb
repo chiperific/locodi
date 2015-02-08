@@ -2,41 +2,78 @@
   <%= image_tag 'crouching_sand.jpg', class: "supersized-image" %>
 </div>
 
-<div class="content-block row donate-image-block">
-  <div class="col-xs-12">
-    <div class="well donate-image-well">
-      <h3 class="text-center">Donation block</h3>
-      
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="support-chooser">
-            <li>Support Amt #1 - $</li>
-            <li>Support Amt #2 - $</li>
-            <li>Support Amt #3 - $</li>
-            <li>Support Amt #4 - $</li>
-            <li>Support Amt #5 - $</li>
-          </ul>
+<%= form_tag do %>
+  <div class="content-block row donate-image-block">
+    <div class="col-xs-12">
+      <div class="well donate-image-well">
+        <h3 class="text-center">Make a financial gift to support our work:</h3>
+        
+        <div class="row">
+          <div class="col-sm-6">
+            
+            <table class="table" id="donation_ammount">
+              <tr>
+                <th colspan="2"><h5>Ammount:</h5></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :amt, "20" %></td>
+                <td class="text-left"><%= label_tag :amt_20, "Donate $20" %></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :amt, "50" %></td>
+                <td class="text-left"><%= label_tag :amt_50, "Donate $50" %></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :amt, "100" %></td>
+                <td class="text-left"><%= label_tag :amt_100, "Donate $100" %></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :amt, "500" %></td>
+                <td class="text-left"><%= label_tag :amt_500, "Donate $500" %></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :amt, "var", checked: true %></td>
+                <td class="text-left"><%= label_tag :amt_var, "Other ammount:" %></td>
+                <td>$ <%= number_field_tag :var_amt, 1000, min: 20 %></td>
+              </tr>
+            </table>
 
-          <ul>
-            <li>Name</li>
-            <li>Email</li>
-            <li>Credit Card</li>
-          </ul>
-        </div>
-      
-
-        <div class="col-sm-6">
-          <div class="donate-image-div">
-            <%= image_tag 'graduation_day.jpg', class: "donate-image" %>
+            <table class="table" id="donation_recurring">
+              <tr>
+                <th colspan="3"><h5>This is a:</h5></th>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :recur, "once", checked: true %></td>
+                <td class="text-left"><%= label_tag :recur_one, "One-time donation" %></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-right"><%= radio_button_tag :recur, "monthly" %></td>
+                <td class="text-left"><%= label_tag :recur_month, "Monthly donation" %></td>
+                <td class="text-left">For the next &nbsp<%= number_field_tag :recur_months, 12, min: 2, step: 1 %> months</td>
+              </tr>
+            </table>
           </div>
 
-          <%= link_to "Donate", "https://www.google.com", class: "btn btn-lg btn-primary donate-btn", target: "blank" %>
+          <div class="col-sm-6">
+            <div class="donate-image-div">
+              <%= image_tag 'graduation_day.jpg', class: "donate-image" %>
+            </div>
+
+            <%= submit_tag "Donate", class: "btn btn-lg btn-primary donate-btn" %>
+          </div>
         </div>
+          
       </div>
-        
     </div>
   </div>
-</div>
+
+<% end %>
 
 <div class="content-block row">
   <div class="col-xs-12">

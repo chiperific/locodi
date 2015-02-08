@@ -31,9 +31,10 @@ h3, h4 {
   text-align: left !important;
 }
 
-.thumbnail {
-  width: 10em;
-  margin: 8px !important;
+.waterfall-img {
+  width: 100%;
+  border: 4px solid white;
+  border-radius: 8px;
 }
 
 .image-left {
@@ -50,6 +51,15 @@ h3, h4 {
 }
 
 // Styling for support page:
+#recur_months {
+  width: 48px;
+  text-align: right;
+}
+
+#var_amt {
+  width: 96px;
+  text-align: right;
+}
 
 // donate-image and donate-btn styling:
 .donate-image {
@@ -60,7 +70,8 @@ h3, h4 {
 .donate-btn {
   background-color: $quat-clr !important;
   display: block !important;
-  margin: 1em;
+  margin-top: 1em;
+  width: 100%;
 }
 
 // styling for work page

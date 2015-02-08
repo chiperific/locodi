@@ -5,18 +5,8 @@ miniSocialResizer = () ->
   targetHeight = $('#mini_blog').height()
   $('#mini_social').height(targetHeight)
   tableHeight = $('#blog_table').height() + 20
-  $('#rebelmouse-embed-iframe').attr("height", tableHeight)
-  $('#rebelmouse-embed-iframe').height(tableHeight)
-
-# TEMP - if the 3 homepage boxes get removed, remove this function
-boxStandardizer = () ->
-  box1 = $('#box1').height()
-  box2 = $('#box2').height()
-  box3 = $('#box3').height()
-  targetHeight = Math.max(box1, box2, box3)
-  $('#box1').height(targetHeight)
-  $('#box2').height(targetHeight)
-  $('#box3').height(targetHeight)
+  $('#mini_social').children('#rebelmouse-embed-iframe').attr("height", tableHeight)
+  $('#mini_social').children('#rebelmouse-embed-iframe').height(tableHeight)
 
 pageBodyResizer = () ->
   bannerHeight = $('#banner_title').height() + 28
@@ -75,17 +65,10 @@ $(window).load ->
   pageBodyResizer()
   imgResizer()
   bannerResizer()
-  boxStandardizer()
   miniSocialResizer()
 
 $(window).resize ->
   pageBodyResizer()
   imgResizer()
   bannerResizer()
-  boxStandardizer()
   miniSocialResizer()
-
-# If I decide to mess with turbolinks:
-  # first, add //= require turbolinks back to application.js
-  #$(document).on "page:change", ->
-  #  imgResizer()
