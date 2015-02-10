@@ -19,3 +19,4 @@
 # Ignore the private stuff
 .env
 Procfile
+config/secrets.yml

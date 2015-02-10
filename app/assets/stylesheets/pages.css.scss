@@ -56,7 +56,7 @@ h3, h4 {
   text-align: right;
 }
 
-#var_amt {
+#amt_var_field {
   width: 96px;
   text-align: right;
 }
@@ -104,6 +104,13 @@ div.content-block {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.leader-thumb {
+  height: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px !important;
 }
 
 // Styling for blog page:

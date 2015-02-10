@@ -4,10 +4,13 @@ Rails.application.routes.draw do
   get 'work', to: 'pages#work'
   get 'leaders', to: 'pages#leaders'
   get 'support', to: 'pages#support'
+  #post 'support', to: 'pages#support'
   get 'join', to: 'pages#join'
   get 'blog', to: 'pages#blog'
   get 'social', to: 'pages#social'
   get 'calendar', to: 'pages#calendar'
+
+  post 'donate', to: 'pages#donate'
 
   get "*path", to:  'pages#home'
 end

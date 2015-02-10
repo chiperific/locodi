@@ -3,6 +3,7 @@
 Website for Locodi.org
 
 ! Start the server using 'unicorn', http://localhost:8080/
+! ./ngrok 8080 to create an external tunnel
 
 ** Issues:
 *
@@ -12,10 +13,11 @@ Website for Locodi.org
 
 
 ** Next up:
-7. Research and integrate PayPal
+7. Finish integrating PayPal
 7.2 -- http://www.gotealeaf.com/blog/basic-paypal-checkout-processing-in-rails
-8. Board page needs pictures and bios
-9. Support page needs payment amounts
+7.3 -- Waiting for completion of business account
+7.4 -- https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
+9. Support page needs thank you message.
 10. Join us page needs content
 11. Need to test Google Calendar events
 12. Integrate helpyousponsor.com
