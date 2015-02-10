@@ -19,4 +19,6 @@
 # Ignore the private stuff
 .env
 Procfile
-config/secrets.yml
+
+
+# config/secrets.yml -- Or not, thanks Heroku (sarcasm)
