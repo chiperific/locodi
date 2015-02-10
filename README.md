@@ -23,3 +23,4 @@ Website for Locodi.org
 12. Integrate helpyousponsor.com
 13. Compress the images for faster page loads
 14. Perform final review and testing of the site
+14.1 -- pageBodyResizer (in supersize.js) is being annoying if you scroll before the page loads fully.
