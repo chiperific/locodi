@@ -2,17 +2,21 @@
   <%= image_tag 'kids_playing.jpg', class: "banner-img" %>
 </div>
 
-<div class="row">
+<div class="content-block">
   <h3>There are many ways to get involved in our work</h3>
 </div>
 
-<div class="row content-block">
+<div class="content-block">
   <div class="col-xs-12 col-sm-6">
     <div class="well styled-links">
       <%= icon('plane fa-4x') %> 
       <h4>Take a Vision Trip</h4>
       <p class="align-left">
-        <%= lorem_ipsum(200) %>
+        Come visit us for a vision trip that is tailored to help you learn, see, feel and love what the Lord is doing in Uganda! 
+        <br /><br />
+        There are many things you can do during your trip, from visiting the kids at the orphanage to meeting our students at the pastors training school. You can see the life-changing work of our purity clubs and spend time with some of our sponsored kids.
+        <br /><br />
+        And there's always an opportunity to see and experience Uganda's beautiful landscape and wildlife on a safari tour.
       </p>
       <p>
         <%= mail_to "info@locodi.org", "Contact us about a Vision Trip", subject: "I'm interested in a Vision Trip!", encode: "hex", target: :blank %>
@@ -25,7 +29,11 @@
       <%= icon('child fa-4x') %> 
       <h4>Sponsor a Child</h4>
       <p class="align-left">
-        <%= lorem_ipsum(200) %>
+        Through the work we do, we meet many children in need of sponsors. We equip generous and compassionate sponsors to directly provide for children that are living on the streets, orphans because of the HIV/AIDS epidemic, and trapped in poverty.
+        <br /><br />
+        For your financial gift of $18 per month or more, your sponsored child will have access to education, health care and other basic necessities.
+        <br /><br />
+        There are many children whose future could be secured by your kind support. Please prayerfully consider sponsoring one of these children today.
       </p>
       <p>
         <%= mail_to "info@locodi.org", "Contact us about Sponsoring a Child", subject: "I'm interested in sponsoring a child!", encode: "hex", target: :blank %>
@@ -38,7 +46,11 @@
       <%= icon('group fa-4x') %> 
       <h4>Volunteer with Locodi</h4>
       <p class="align-left">
-        <%= lorem_ipsum(200) %>
+        There are many areas where your skills and talents can be put to the work of God’s Kingdom, both in the United States and Uganda. 
+        <br /><br />
+        From spreading the word about LOCODI, to traveling across the world to swing a hammer, you can make a difference.
+        <br /><br />
+        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our events calendar and social media feeds to see what we’re up to.
       </p>
       <p>
         <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
@@ -51,7 +63,11 @@
       <%= link_to "#{icon('envelope fa-4x')}".html_safe, support_path %>
       <%= link_to "<h4>Provide Financial Support</h4>".html_safe, support_path %>
       <p class="align-left">
-        <%= lorem_ipsum(200) %>
+        Your gifts go directly to the work of LOCODI’s ministries and programs. We are dedicated to being good stewards of the funds entrusted to us. 
+        <br /><br />
+        Your generosity enables all the <%= link_to "work we do", work_path  %>, from training pastors, to providing for children orphaned by HIV/AIDS and trying to stop the spread of this terrible disease to the next generation.
+        <br /><br />
+        Please consider making LOCODI part of your charitable giving.
       </p>
       <p>
         <%= link_to "Show your Support Today", support_path %>
