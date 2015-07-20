@@ -12,7 +12,9 @@
 </tr>
 <tr>
   <td colspan="2" class="text-left">
-    <%= raw blog.css('content').text[0..106] + "..." %>
+    <% post = blog.css('content').text %>
+    <% whitewash = Loofah.scrub_fragment( post, :whitewash ) %>
+    <%= whitewash.text[0..400] + "..." %>
+    <%= link_to "Read more",blog_path, class: "float-right styled-link" %>
   </td>
 </tr>
-  

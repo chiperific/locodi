@@ -16,6 +16,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'lorem_ipsum_amet'
+
+gem 'loofah' #Nokogiri HTML scrubbing
+gem 'loofah-activerecord'
+
 gem 'actionview-encoded_mail_to' #protect email addresses from spam.
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
