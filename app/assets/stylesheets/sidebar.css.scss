@@ -1,17 +1,17 @@
 // Theme colors:
 // Color scheme: http://www.rapidtables.com/web/color/color-scheme.htm
 //     Starting hex: #A67240
-$pri-clr: rgba(248,237,217,1); //beige
-$sec-clr: rgba(136,164,210,1); //lt blue
-$ter-clr-1: rgba(231,167,159,1); //lt red
-$ter-clr-2: rgba(116,165,64,1); //lt green
-$quat-clr: rgba(32,56,111,1); //dk blue
+$pri-clr:   white; //rgba(248,237,217,1); //beige
+$sec-clr:   white; //rgba(136,164,210,1); //lt blue
+$ter-clr-1: white; //rgba(231,167,159,1); //lt red
+$ter-clr-2: white; //rgba(116,165,64,1); //lt green
+$quat-clr:  white; //rgba(32,56,111,1); //dk blue
 
-$pri-clr-trans: rgba(248,237,217,.5); //beige
-$sec-clr-trans: rgba(136,164,210,.5); //lt blue
-$ter-clr-1-trans: rgba(231,167,159,.5); //lt red
-$ter-clr-2-trans: rgba(83,165,64,.5); //lt green
-$quat-clr-trans: rgba(32,56,111,.65); //dk blue
+$pri-clr-trans:   rgba(255,255,255,.5); //rgba(248,237,217,.5); //beige
+$sec-clr-trans:   rgba(255,255,255,.5); //rgba(136,164,210,.5); //lt blue
+$ter-clr-1-trans: rgba(255,255,255,.5); //rgba(231,167,159,.5); //lt red
+$ter-clr-2-trans: rgba(255,255,255,.5); //rgba(83,165,64,.5); //lt green
+$quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
 
 
 // Styles
@@ -29,6 +29,7 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
   -moz-transition: all 0.5s ;
   -o-transition: all 0.5s ;
   transition: all 0.5s ;
+  //border: 1px solid rgba(32,56,111,.65);
 }
 
 #sidebar_ul {
@@ -58,8 +59,8 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 
     a:hover {
       text-decoration: none;
-      color: rgb(240,240,240);
-      background: rgba(255,255,255,0.2);
+      color: rgb(255,255,255);
+      background: rgba(0,0,0,0.2);
     }
 
     a:active, a:focus {
@@ -67,7 +68,7 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
     }
   }
   .active {
-    background-color: $ter-clr-2;
+    background-color: rgba(0,0,0,0.2);
     border: rgba(255,255,255, 0.2) solid 1px;
     //border-radius: 4px;
   }
@@ -76,12 +77,16 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 // The div actually lives on application.html.erb
 #sidebar_button {
   position: absolute;
-  left: 0;
+  left: 0px;
   width: 24px;
   height: 40px;
   line-height: 40px;
   margin-top: 10px;
   z-index: 7;
+  border-top: 1px solid rgba(32,56,111,.65);
+  border-bottom: 1px solid rgba(32,56,111,.65);
+  border-right: 1px solid rgba(32,56,111,.65);
+  border-left: 1px solid rgba(255,255,255,0.7);
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 6px;
@@ -92,7 +97,7 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
   -o-transition: all 0.5s ;
   transition: all 0.5s ;
   a {
-    color: $pri-clr;
+    color: rgba(32,56,111,.65);
     line-height: 40px;
     i {
       padding-left: 2px;
@@ -108,8 +113,9 @@ $quat-clr-trans: rgba(32,56,111,.65); //dk blue
 
 #wrapper.show-sidebar #sidebar-wrapper {
     width: 100px;
+    border: 1px solid rgba(32,56,111,.65);
 }
 
 #wrapper.show-sidebar #sidebar_button {
-  left: 100px;
+  left: 99px;
 }

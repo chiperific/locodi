@@ -1,7 +1,19 @@
 // Styling for History_nav partial that appears inside wrapper on history page.
-$pri-clr: rgba(248,237,217,1); //beige
-$pri-clr-trans: rgba(248,237,217,.5); //beige
-$sec-clr: rgba(136,164,210,1); //lt blue
+
+// Theme colors:
+// Color scheme: http://www.rapidtables.com/web/color/color-scheme.htm
+//     Starting hex: #A67240
+$pri-clr:   white; //rgba(248,237,217,1); //beige
+$sec-clr:   white; //rgba(136,164,210,1); //lt blue
+$ter-clr-1: white; //rgba(231,167,159,1); //lt red
+$ter-clr-2: white; //rgba(116,165,64,1); //lt green
+$quat-clr:  white; //rgba(32,56,111,1); //dk blue
+
+$pri-clr-trans:   rgba(255,255,255,.5); //rgba(248,237,217,.5); //beige
+$sec-clr-trans:   rgba(255,255,255,.5); //rgba(136,164,210,.5); //lt blue
+$ter-clr-1-trans: rgba(255,255,255,.5); //rgba(231,167,159,.5); //lt red
+$ter-clr-2-trans: rgba(255,255,255,.5); //rgba(83,165,64,.5); //lt green
+$quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
 
 #work_div {
   position: fixed;
@@ -20,12 +32,18 @@ $sec-clr: rgba(136,164,210,1); //lt blue
   width: 100%;
   height: 25px;
   z-index: 4;
-  background: -moz-linear-gradient(top, rgba(248,237,217,0) 0%, rgba(248,237,217,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,237,217,0)), color-stop(100%,rgba(248,237,217,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* W3C */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+  // background: -moz-linear-gradient(top, rgba(248,237,217,0) 0%, rgba(248,237,217,1) 100%); /* FF3.6+ */
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,237,217,0)), color-stop(100%,rgba(248,237,217,1))); /* Chrome,Safari4+ */
+  // background: -webkit-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Chrome10+,Safari5.1+ */
+  // background: -o-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* Opera 11.10+ */
+  // background: -ms-linear-gradient(top, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* IE10+ */
+  // background: linear-gradient(to bottom, rgba(248,237,217,0) 0%,rgba(248,237,217,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8edd9', endColorstr='#f8edd9',GradientType=0 ); /* IE6-9 */
 }
 

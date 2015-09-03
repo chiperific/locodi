@@ -25,18 +25,19 @@
   </div>
 
   <div class="col-xs-12 col-sm-6">
-    <div class="well styled-links">
-      <%= icon('child fa-4x') %> 
-      <h4>Sponsor a Child</h4>
+    <div class="well unstyled-links">
+      <%= link_to "#{icon('child fa-4x')}".html_safe, sponsor_path %>
+      <%= link_to "<h4>Sponsor a Child</h4>".html_safe, sponsor_path %>
       <p class="align-left">
         Through the work we do, we meet many children in need of sponsors. We equip generous and compassionate sponsors to directly provide for children that are living on the streets, orphans because of the HIV/AIDS epidemic, and trapped in poverty.
         <br /><br />
-        For your financial gift of $18 per month or more, your sponsored child will have access to education, health care and other basic necessities.
+        For your financial gift of $18 per month or more, your sponsored child will have access to education, healthcare and other basic necessities.
         <br /><br />
         There are many children whose future could be secured by your kind support. Please prayerfully consider sponsoring one of these children today.
       </p>
+      <p><%= link_to "Sponsor a Child Today", support_path %></p>
       <p>
-        <%= mail_to "info@locodi.org", "Contact us about Sponsoring a Child", subject: "I'm interested in sponsoring a child!", encode: "hex", target: :blank %>
+        <%= mail_to "sponsorship@locodi.org", "Contact us about Child Sponsorship", subject: "I'm interested in sponsoring a child!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
@@ -50,7 +51,7 @@
         <br /><br />
         From spreading the word about LOCODI, to traveling across the world to swing a hammer, you can make a difference.
         <br /><br />
-        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our events calendar and social media feeds to see what we’re up to.
+        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our <%= link_to "events calendar", calendar_path %> and <%= link_to "social media feeds", social_path %> to see what we’re up to.
       </p>
       <p>
         <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
@@ -71,6 +72,9 @@
       </p>
       <p>
         <%= link_to "Show your Support Today", support_path %>
+      </p>
+      <p>
+        <%= mail_to "support@locodi.org", "Contact us about Supporting LOCODI", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
