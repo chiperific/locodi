@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   # DELETE THIS BEFORE DEPLOY
-  http_basic_authenticate_with name: "admin", password: "locodi15", only: :sponsor
+  http_basic_authenticate_with name: "admin", password: "locodi15", only: [:sponsor_child, :sponsor_pastor]
 
   def home
     @page_title = "Home"
@@ -46,9 +46,14 @@ class PagesController < ApplicationController
 
   end
 
-  def sponsor
+  def sponsor_child
     @page_title = "Sponsor a Child"
-    @page_finder = "sponsor"
+    @page_finder = "sponsor_child"
+  end
+
+  def sponsor_pastor
+    @page_title = "Sponsor a Pastor"
+    @page_finder = "sponsor_pastor"
   end
 
   def join

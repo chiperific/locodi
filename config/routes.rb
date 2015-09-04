@@ -12,7 +12,8 @@ Rails.application.routes.draw do
 
   post 'donate', to: 'pages#donate'
 
-  get 'sponsor', to: 'pages#sponsor'
+  get 'sponsor_child', to: 'pages#sponsor_child'
+  get 'sponsor_pastor', to: 'pages#sponsor_pastor'
 
   get "*path", to:  'pages#home'
 end
