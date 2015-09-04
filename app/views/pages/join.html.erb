@@ -7,7 +7,7 @@
 </div>
 
 <div class="content-block">
-  <div class="col-xs-12 col-sm-6">
+  <div class="col-xs-12 col-sm-4">
     <div class="well styled-links">
       <%= icon('plane fa-4x') %> 
       <h4>Take a Vision Trip</h4>
@@ -24,37 +24,36 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-6">
+  <div class="col-xs-12 col-sm-4">
     <div class="well unstyled-links">
-      <%= link_to "#{icon('child fa-4x')}".html_safe, sponsor_path %>
-      <%= link_to "<h4>Sponsor a Child</h4>".html_safe, sponsor_path %>
+      <%= link_to "#{icon('child fa-4x')}".html_safe, sponsor_child_path %>
+      <%= link_to "<h4>Sponsor a Child</h4>".html_safe, sponsor_child_path %>
       <p class="align-left">
         Through the work we do, we meet many children in need of sponsors. We equip generous and compassionate sponsors to directly provide for children that are living on the streets, orphans because of the HIV/AIDS epidemic, and trapped in poverty.
         <br /><br />
-        For your financial gift of $18 per month or more, your sponsored child will have access to education, healthcare and other basic necessities.
+        For your financial gift of $20 per month or more, your sponsored child will have access to education, healthcare and other basic necessities.
         <br /><br />
         There are many children whose future could be secured by your kind support. Please prayerfully consider sponsoring one of these children today.
       </p>
-      <p><%= link_to "Sponsor a Child Today", support_path %></p>
+      <p><%= link_to "Sponsor a Child Today", sponsor_child_path %></p>
       <p>
         <%= mail_to "sponsorship@locodi.org", "Contact us about Child Sponsorship", subject: "I'm interested in sponsoring a child!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-6">
-    <div class="well styled-links">
-      <%= icon('group fa-4x') %> 
-      <h4>Volunteer with Locodi</h4>
+  <div class="col-xs-12 col-sm-4">
+    <div class="well unstyled-links">
+      <%= link_to "#{icon('graduation-cap fa-4x')}".html_safe, sponsor_pastor_path %>
+      <%= link_to "<h4>Sponsor a Pastor</h4>".html_safe, sponsor_pastor_path %>
       <p class="align-left">
-        There are many areas where your skills and talents can be put to the work of God’s Kingdom, both in the United States and Uganda. 
+        You can sponsor a pastor to attend classes at the Kingdom Life Training Center in Jinja. There they receive training and support on a variety of topics from running a church to sustainable agricultural development.
         <br /><br />
-        From spreading the word about LOCODI, to traveling across the world to swing a hammer, you can make a difference.
-        <br /><br />
-        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our <%= link_to "events calendar", calendar_path %> and <%= link_to "social media feeds", social_path %> to see what we’re up to.
+        Your financial gift of $130 provides 7 meals, lodging for two nights and utilities costs for training sessions at Kingdom Life Ministries' training center. This training equips pastors to serve their communities with teaching and spiritual care.
       </p>
+      <p><%= link_to "Sponsor a Pastor Today", sponsor_pastor_path %></p>
       <p>
-        <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
+        <%= mail_to "sponsorship@locodi.org", "Contact us about Pastor Sponsorship", subject: "I'm interested in sponsoring a pastor!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
@@ -75,6 +74,23 @@
       </p>
       <p>
         <%= mail_to "support@locodi.org", "Contact us about Supporting LOCODI", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <div class="well styled-links">
+      <%= icon('group fa-4x') %> 
+      <h4>Volunteer with Locodi</h4>
+      <p class="align-left">
+        There are many areas where your skills and talents can be put to the work of God’s Kingdom, both in the United States and Uganda. 
+        <br /><br />
+        From spreading the word about LOCODI, to traveling across the world to swing a hammer, you can make a difference.
+        <br /><br />
+        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our <%= link_to "events calendar", calendar_path %> and <%= link_to "social media feeds", social_path %> to see what we’re up to.
+      </p>
+      <p>
+        <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
