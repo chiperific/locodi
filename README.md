@@ -7,7 +7,7 @@ Created 2015 by Chiperific (http://chiperific.com)
 
 ** Next up:
 15. Add emails to leaders page. Update leaders page.
-13. Compress the images for faster page loads
+16. Switch Stripe to live and update HYS with live key
 14. Perform final review and testing of the site
 
 
