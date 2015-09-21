@@ -89,13 +89,17 @@ $quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
 }
 
 @media (max-width: 700px ) {
-  #work_div, .work-img {
+  #work_div {
     display: none;
+  } 
+
+  .work-img {
+    //display: none;
   }
 }
 
 @media (max-height: 550px ) {
   #work_div {
-    display: none;
+    //display: none;
   }
 }

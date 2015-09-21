@@ -202,7 +202,7 @@ body {
 .footer {
   position: fixed;
   z-index: 10;
-  padding: .75em inherit;
+  padding: .2em;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -233,9 +233,7 @@ body {
 
 // Hide the "created by" section of the footer on skinny screens
 @media ( max-width: 300px ) {
-  #created_by {
-    display: none;
-  }
+  
 }
 
 // Shrink fonts on skinny screens
@@ -255,6 +253,17 @@ body {
   h3 {
     font-size: 1.25em;
     margin: 5px inherit;
+  }
+
+  .footer {
+    background-color: $quat-clr;
+    p {
+      color: rgb(200,200,200);
+    }
+  }
+
+  #created_by {
+    display: none;
   }
   
 }
