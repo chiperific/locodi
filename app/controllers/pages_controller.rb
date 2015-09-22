@@ -1,8 +1,5 @@
 class PagesController < ApplicationController
 
-  # DELETE THIS BEFORE DEPLOY
-  http_basic_authenticate_with name: "admin", password: "locodi15", only: [:sponsor_child, :sponsor_pastor]
-
   def home
     @page_title = "Home"
     @page_finder = "home"
