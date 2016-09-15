@@ -25,6 +25,7 @@ Created 2015 by Chiperific (http://chiperific.com)
 
 6. Work page to blog, filter on "initiatives"
 ====6.1 Show only first photo
-6.2 Align photos to left
+====6.2 Align photos to left
 ====6.3 Wrap text around photos
+6.4 Link to donate on every initiative
 
