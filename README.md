@@ -29,3 +29,5 @@ Created 2015 by Chiperific (http://chiperific.com)
 ====6.3 Wrap text around photos
 6.4 Link to donate on every initiative
 
+7. Support page links to General Donations step 2
+

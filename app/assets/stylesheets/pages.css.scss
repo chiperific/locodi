@@ -157,7 +157,7 @@ div.content-block {
 
 // Kill the breaks that pad the photos in the xml
 .work-blog-content br {
-  display: none;
+  // display: none;
 }
 
 // Put the photo to the left
@@ -167,8 +167,6 @@ div.content-block {
   overflow: auto;
   margin-right: 1em;
 }
-
-
 
 // Constrain the photo to the div
 .work-blog-content > .separator img {
@@ -180,6 +178,12 @@ div.content-block {
   border-radius: 12px;
 }
 
+// Position the support button
+.support-btn-work {
+  float: right;
+  position: relative;
+  bottom: 0px;
+}
 
 // ****************** Styling for Social page:
 .rebel-mouse {

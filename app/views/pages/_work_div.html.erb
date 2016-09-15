@@ -6,4 +6,8 @@
   <div class="align-left work-blog-content">
     <%= raw blog.css('content').text %>
   </div>
+  <div class="align-right work-blog-donate">
+    <%= link_to "Support our work", support_path, class: "btn btn-primary support-btn-work" %>
+  </div>
 </div>
+
