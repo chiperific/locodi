@@ -139,6 +139,35 @@ div.content-block {
   text-overflow: ellipsis;
 }
 
+// Handle blog pics on Work page
+// Hide all photos but the first
+.work-blog-content > .separator ~ .separator {
+  display: none;
+}
+
+// Put the photo to the left
+.work-blog-content > .separator {
+  display: block;
+  text-align: left !important;
+  width: 25%;
+  margin-left: -33%;
+  height: auto;
+}
+
+.work-blog-content > .separator img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.work-blog-content {
+  display: block;
+  width: 75%;
+  margin-left: 25%;
+}
+
 // Hide blog titles in buttons on small screen widths
 @media (max-width: 400px) {
   .blog-ttl {

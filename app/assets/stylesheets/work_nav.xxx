@@ -58,7 +58,7 @@ $quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
 .slider-label {
   text-align: center;
   width: 16.666%;
-  
+
   a {
     font-size: .85em;
     white-space: nowrap;
@@ -91,7 +91,7 @@ $quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
 @media (max-width: 700px ) {
   #work_div {
     display: none;
-  } 
+  }
 
   .work-img {
     //display: none;

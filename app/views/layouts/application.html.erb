@@ -10,9 +10,9 @@
 
 <body>
   <%= render 'layouts/banner_title' %>
-    
+
   <div id="wrapper" class="show-sidebar container-fluid">
-    
+
     <%= render 'layouts/sidebar' %>
 
     <div id="page_body" class="container-fluid">
@@ -23,22 +23,13 @@
       <%= yield %>
       <div class="page-body-footer-spacer"></div>
     </div>
-
-    <% if @page_finder == "work" %>
-      <div id="work_div" class="container-fluid">
-        <div id="work_fade" class="row"></div>
-        <div id="work_nav">
-          <%= render 'work_nav' %>
-        </div>
-      </div>
-    <% end %>
   </div>
-  
+
 
   <footer class="footer">
     <div class="container-fluid">
       <p>
-        <%= icon('copyright') %> 
+        <%= icon('copyright') %>
         2014 LOCODI
         <span id="created_by">
           | Created by <%= link_to "Chiperific", "http://chiperific.com", target: :blank %>
