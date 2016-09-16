@@ -12,10 +12,10 @@ class PagesController < ApplicationController
     @blogs = @blog_page.css('entry')[0..2]
   end
 
-  def work
-    @page_title = "Our Work"
-    @page_finder = "work"
-    @banner_title = "Our Work"
+  def initiatives
+    @page_title = "Initiatives"
+    @page_finder = "initiatives"
+    @banner_title = "Our Initiatives"
 
     require 'open-uri'
     @blog_page = Nokogiri::HTML(open("http://embracingthelove.blogspot.com/feeds/posts/default/-/Initiatives"))

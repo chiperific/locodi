@@ -9,17 +9,21 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1744866459132306";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <%= render 'layouts/navbar' %>
   <%= render 'layouts/banner_title' %>
 
   <div id="wrapper" class="show-sidebar container-fluid">
-
-    <%= render 'layouts/sidebar' %>
-
     <div id="page_body" class="container-fluid">
-      <div id="sidebar_button">
-        <%= link_to( icon('angle-double-left fa-2x'), "#", id: "sidebar_toggle") %>
-      </div>
-
       <%= yield %>
       <div class="page-body-footer-spacer"></div>
     </div>

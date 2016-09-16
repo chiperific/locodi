@@ -7,7 +7,8 @@ Created 2015 by Chiperific (http://chiperific.com)
 
 ** V2:
 1. Sunset Rebelmouse
-1.1 Replace with Facebook plugin?
+****1.1 Replace with Facebook plugin?
+1.2 Not on own page. On what page?
 
 2. Adjust HYS
 2.1 General == just General Donation, add description
@@ -16,18 +17,19 @@ Created 2015 by Chiperific (http://chiperific.com)
 2.4 S/O links for direct donate for Kragts and Olupots, mailgun -> Gmail instructions, HYS login and help links
 
 3. New homepage
-3.1 Navbar at top
-3.1.1 Donate button on navbar
+====3.1 Navbar at top
+====3.1.1 Donate button on navbar
 3.2 Missionaries block (pics click to donate page?)
+3.3 SIMPLIFY
 
 ====4. Remove pastors page
 ====5. Remove calendar page
 
-6. Work page to blog, filter on "initiatives"
+====6. Work page to blog, filter on "initiatives"
 ====6.1 Show only first photo
 ====6.2 Align photos to left
 ====6.3 Wrap text around photos
-6.4 Link to donate on every initiative
+====6.4 Link to donate on every initiative
 
 7. Support page links to General Donations step 2
 

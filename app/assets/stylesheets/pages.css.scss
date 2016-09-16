@@ -144,12 +144,14 @@ div.content-block {
 // ****************** Styling for Work page
 .work-blog {
   float: left;
-  width: 100%;
+  width: 80%;
   clear: both;
   overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%
 }
 
-// Handle blog pics on Work page
+// Handle blog pics on Initiatives page
 // Hide all photos but the first
 .work-blog-content > .separator ~ .separator {
   display: none;
@@ -182,7 +184,7 @@ div.content-block {
 .support-btn-work {
   float: right;
   position: relative;
-  bottom: 0px;
+  margin-top: 2em;
 }
 
 // ****************** Styling for Social page:

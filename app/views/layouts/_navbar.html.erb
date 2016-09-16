@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="btn donate-button">
+        <%= link_to icon('heart fa-fw') + " Donate", support_path %>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_collapsable" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <%= link_to "LOCODI", root_path, class: "navbar-brand" %>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar_collapsable"">
+      <ul class="nav navbar-nav">
+        <li id="home">
+          <%= link_to icon('home fa-fw') + " Home", root_path  %>
+        </li>
+        <li id="initiatives" >
+          <%= link_to icon('lightbulb-o fa-fw') + " Initiatives", initiatives_path  %>
+        </li>
+        <li id="leaders">
+          <%= link_to icon('gavel fa-fw') + " Board", leaders_path %>
+        </li>
+        <li id="join" >
+          <%= link_to icon('group fa-fw') + " Join", join_path %>
+        </li>
+        <li id="support" >
+          <%= link_to icon('heart-o fa-fw') + " Support", support_path %>
+        </li>
+        <li id="sponsor_child">
+          <%= link_to icon('child fa-fw') + " Children", sponsor_child_path %>
+        </li>
+        <!-- <li id="sponsor_pastor">
+          link_to icon('graduation-cap fa-fw') + " Pastors", sponsor_pastor_path
+        </li> -->
+        <li id="blog" >
+          <%= link_to icon('list-alt fa-fw') + " Blog", blog_path %>
+        </li>
+        <li id="fb" >
+          <%= link_to icon('share-alt fa-fw'), root_path %>
+        </li>
+      </ul>
+      <button type="button" class="btn donate-button">
+        <%= link_to icon('heart fa-fw') + " Donate", support_path %>
+      </button>
+    </div>
+  </div>
+</nav>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get 'work', to: 'pages#work'
+  get 'initiatives', to: 'pages#initiatives'
   get 'leaders', to: 'pages#leaders'
   get 'support', to: 'pages#support'
   get 'join', to: 'pages#join'
