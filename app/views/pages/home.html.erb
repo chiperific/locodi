@@ -2,61 +2,35 @@
   <%= image_tag 'soccer.jpg', class: "supersized-image" %>
 </div>
 
-<div class="content-block row well well-trans">
-  <div class="col-sm-6">
-    <h3>
-      Raising an empowered generation...
-    </h3>
-    <p>
-      LOCODI was started by a group of passionate Christians in Soroti, Uganda. We are creating a new generation of citizens that are focused on compassion and demonstrating Christ's love. We invite you to become a part of our work.
-      <%= link_to "Join us today!", join_path %>
-    </p>
-  </div>
-
-  <div class="col-sm-6">
-    <h3>
-      ...full of God's love and compassion.
-    </h3>
-    <p>
-      We are all important parts of one body. We need each other. And together, we can do something big for the Kingdom of God. Kindly consider <%= link_to "joining us", join_path %> through <%= link_to "prayers", social_path %>, a <%= link_to "financial gift", support_path %> or a <%= link_to "vision trip", join_path %> to see what we do and how you can help.
-    </p>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Raising an empowered generation full of God's love and compassion.</h3>
   </div>
 </div>
 
+<div class="row">
+  <div class="col-xs-12">
+    <div class="centered">
+      <%= link_to icon('heart fa-fw') + " Donate", support_path, class: "btn btn-default align-center mega-button" %>
+    </div>
+  </div>
+</div>
+
+<div class="content-block row missionary-title">
+  <div class="col-xs-12">
+    <h3>Support our missionaries</h3>
+  </div>
+</div>
 <div class="content-block row">
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-    <iframe class="hysiframe" src="https://app.helpyousponsor.com/frontend/view_entity/91/428/17034/836b187f76794495d4ac485903575e0c3b1ea298" style="border:0px #FFFFFF none;" name="HYSiFrame" scrolling="yes" frameborder="1" height="600px" marginheight="0px" marginwidth="0px" width="100%"></iframe>
+  <div class="col-xs-12 col-sm-6 missionary-div">
+    <a href="/missionaries?finder=17070">
+      <img src="https://s3-us-west-1.amazonaws.com/hys/347380553bdec359915d1754f3dc6116a098cc0c2.jpg" alt="The Olupots" class="missionary-photo">
+    </a>
   </div>
-</div>
-
-<div class="content-block row spacing">
-
-  <div class="col-xs-12 col-sm-6">
-    <div id="mini_blog" class="well">
-      <h4>
-        <%= link_to "Our latest writings:", blog_path, class: "unstyled-link" %>
-        <%= link_to "Read all", blog_path, class: "float-right styled-link" %>
-      </h4>
-      <table id="blog_table" class="table table-condensed table-fixed">
-        <tbody>
-            <% @blogs.each do |blog| %>
-              <%= render 'blog_mini', blog: blog %>
-            <% end %>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-sm-6">
-    <div id="mini_social" class="well">
-      <h4>
-        <%= link_to "Our latests posts:", social_path, class: "unstyled-link"%>
-        <%= link_to "See all", social_path, class: "float-right styled-link" %>
-      </h4>
-      <i class="align-right">
-      </i>
-      <script type="text/javascript" class="rebelmouse-embed-script" src="https://www.rebelmouse.com/static/js-build/embed/embed.js?site=locodi&flexible=0&dont_load_new_posts=1&more_button=0&post_limit=8&show_rebelnav=0&height=1200"></script>
-    </div>
+  <div class="col-xs-12 col-sm-6 missionary-div">
+    <a href="/missionaries?finder=17034">
+      <img src="https://s3-us-west-1.amazonaws.com/hys/4ff1085862b9a77b18c528d2bc7cc0a4044c49f61.jpg" alt="The Kragts" class="missionary-photo">
+    </a>
   </div>
 </div>
 

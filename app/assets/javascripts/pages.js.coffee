@@ -11,13 +11,3 @@ $ ->
   # Blog images get an added align="left" attribute
   $('.separator').children('a').children('img').attr('align', 'left')
 
-  # # Support page, select 'Other amount:' radio when number_field changes
-  # $('#amt_var_field').focus ->
-  #   $('#donation_amount input').prop('checked', false)
-  #   $('#amt_var').prop('checked', true)
-
-  # # Support page, select 'monthly donation' radio when number_field changes
-  # $('#recur_months').focus ->
-  #   $('#recur_once').prop('checked', false)
-  #   $('#recur_monthly').prop('checked', true)
-

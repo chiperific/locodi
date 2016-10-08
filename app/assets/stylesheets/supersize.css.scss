@@ -1,19 +1,46 @@
+// Theme colors:
+// Color scheme: http://www.rapidtables.com/web/color/color-scheme.htm
+//     Starting hex: #A67240
+$pri-clr:   white; //rgba(248,237,217,1); //beige
+$sec-clr:   white; //rgba(136,164,210,1); //lt blue
+$ter-clr-1: white; //rgba(231,167,159,1); //lt red
+$ter-clr-2: white; //rgba(116,165,64,1); //lt green
+$quat-clr:  white; //rgba(32,56,111,1); //dk blue
+
+$pri-clr-trans:   rgba(255,255,255,.5); //rgba(248,237,217,.5); //beige
+$sec-clr-trans:   rgba(136,164,210,.65); //rgba(136,164,210,.5); //lt blue
+$ter-clr-1-trans: rgba(255,255,255,.5); //rgba(231,167,159,.5); //lt red
+$ter-clr-2-trans: rgba(255,255,255,.5); //rgba(83,165,64,.5); //lt green
+$quat-clr-trans:  rgba(32,56,111,.65); //rgba(32,56,111,.65); //dk blue
+
 // Background images
-.supersized { 
-  position:fixed; 
-  left:0; top:0; 
-  overflow:hidden; 
-  z-index:-1; 
-  height:100%; 
+.supersized {
+  position:fixed;
+  left:0; top:0;
+  overflow:hidden;
+  z-index:-1;
+  height:100%;
   width:100%;
 
-  img { 
-    width:auto; 
+  img {
+    width:auto;
     height:auto;
-    outline:none; border:none; 
+    outline:none; border:none;
   }
 }
 
-  
-    
+// Add opacity layer
+.supersized::after {
+  content: "";
+  background-color: $sec-clr-trans;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+
+
 

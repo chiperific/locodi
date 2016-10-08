@@ -11,10 +11,11 @@ Created 2015 by Chiperific (http://chiperific.com)
 1.2 Not on own page. On what page?
 
 2. Adjust HYS
-2.1 General == just General Donation, add description
-2.2 Missionaries == Kragts and Olupots, has name, location, description
-2.3 Turn on communication with sponsorees
-2.4 S/O links for direct donate for Kragts and Olupots, mailgun -> Gmail instructions, HYS login and help links
+====2.1 General == just General Donation, add description
+====2.2 Missionaries == Kragts and Olupots, has name, location, description
+====2.2.1 S/U Auto emails for Missionary program
+====2.3 Turn on communication with sponsorees
+====2.4 S/O links for direct donate for Kragts and Olupots, mailgun -> Gmail instructions, HYS login and help links
 
 3. New homepage
 ====3.1 Navbar at top
@@ -31,5 +32,5 @@ Created 2015 by Chiperific (http://chiperific.com)
 ====6.3 Wrap text around photos
 ====6.4 Link to donate on every initiative
 
-7. Support page links to General Donations step 2
+====7. Support page links to General Donations step 2
 

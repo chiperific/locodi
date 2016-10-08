@@ -1,49 +1,5 @@
-# for pages with background images, auto-fit the image to the screen 
+# for pages with background images, auto-fit the image to the screen
 # on window load and resize
-
-miniSocialResizer = () ->
-  targetHeight = $('#mini_blog').height()
-  $('#mini_social').height(targetHeight)
-  tableHeight = $('#blog_table').height() + 20
-  $('#mini_social').children('#rebelmouse-embed-iframe').attr("height", tableHeight)
-  $('#mini_social').children('#rebelmouse-embed-iframe').height(tableHeight)
-
-pageBodyResizer = () ->
-  bannerHeight = $('#banner_title').height() + 28
-  winHeight = $(window).height()
-  $('#page_body').height(winHeight - bannerHeight)
-  # make #page_body a scrollable div and freeze html and body
-  if $(window).height() > 400
-    $('body').addClass('overflow-hidden')
-    $('#page_body').addClass('overflowy-scroll')
-    $('#blog_nav').removeClass('display-none')
-  else
-    $('body').removeClass('overflow-hidden')
-    $('#page_body').removeClass('overflowy-scroll')
-    $('#blog_nav').addClass('display-none')
-
-bannerResizer = () ->
-  # Match the banner's div to the size of the banner_title dive
-  targetWidth = $('body').width()
-  targetHeight = $('#banner_title').height() + 28
-  bnrImgDiv = $('.banner-img-div')
-  bnrImgDiv.height( targetHeight )
-  bnrImgDiv.width( targetWidth )
-  # Size the banner image apropriately
-  bnrImg = $('.banner-img')
-  origHeight = bnrImg.height()
-  origWidth = bnrImg.width()
-
-  imgRatio = ( origWidth / origHeight )
-  divRatio = ( bnrImgDiv.width() / bnrImgDiv.height() )
-
-  if divRatio > imgRatio
-    bnrImg.width( targetWidth )
-    bnrImg.height( targetWidth / imgRatio )
-  else
-    bnrImg.height( targetHeight )
-    bnrImg.width( targetHeight * imgRatio )
-
 
 imgResizer = () ->
   div = $('.supersized')
@@ -62,13 +18,4 @@ imgResizer = () ->
     bgimg.width( div.height() * imgRatio )
 
 $(window).load ->
-  pageBodyResizer()
   imgResizer()
-  bannerResizer()
-  miniSocialResizer()
-
-$(window).resize ->
-  pageBodyResizer()
-  imgResizer()
-  bannerResizer()
-  miniSocialResizer()

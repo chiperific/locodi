@@ -33,6 +33,16 @@ div.content-block div.well {
   background-color: rgba(255,255,255,0.65) !important;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.centered {
+  width: 214px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 // ****************** Styling for Home page
 
 // Center the Content titles
@@ -44,10 +54,15 @@ h3, h4 {
   text-align: left !important;
 }
 
-.waterfall-img {
-  width: 100%;
-  border: 4px solid white;
-  border-radius: 8px;
+.mega-button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 3em !important;
+  font-weight: lighter !important;
+  background: rgba(255,255,255,0.0) !important;
+  border-color: #333 !important;
+  border-radius: 14px !important;
+  color: #333 !important;
 }
 
 .image-left {
@@ -58,27 +73,25 @@ h3, h4 {
   float: right;
 }
 
-.mini-social-span {
-  margin-left: 2em;
-  margin-right: 2em;
+.missionary-title {
+  margin-top: 6em;
+  margin-bottom: 1.5em;
+}
+
+.missionary-div {
+  margin-bottom: .5em;
+}
+
+.missionary-photo {
+  border: 4px solid #fff;
+  border-radius: 4px;
+  max-height: 32em;
+  max-width: 100%;
 }
 
 // ****************** Styling for Support page
 .hysiframe {
   border-radius: 12px;
-}
-
-// donate-image and donate-btn styling:
-.donate-image {
-  border-radius: 12px;
-  width: 100%;
-}
-
-.donate-btn {
-  background-color: $quat-clr !important;
-  display: block !important;
-  margin-top: 1em;
-  width: 100%;
 }
 
 // ****************** styling for leaders page

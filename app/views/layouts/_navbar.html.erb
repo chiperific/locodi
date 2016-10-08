@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbar_collapsable"">
       <ul class="nav navbar-nav">
         <li id="home">
-          <%= link_to icon('home fa-fw') + " Home", root_path  %>
+          <%= link_to icon('location-arrow fa-fw') + " Missionaries", missionaries_path  %>
         </li>
         <li id="initiatives" >
           <%= link_to icon('lightbulb-o fa-fw') + " Initiatives", initiatives_path  %>
@@ -38,9 +38,6 @@
         </li> -->
         <li id="blog" >
           <%= link_to icon('list-alt fa-fw') + " Blog", blog_path %>
-        </li>
-        <li id="fb" >
-          <%= link_to icon('share-alt fa-fw'), root_path %>
         </li>
       </ul>
       <button type="button" class="btn donate-button">

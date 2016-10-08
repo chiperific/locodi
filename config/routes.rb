@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'join', to: 'pages#join'
   get 'blog', to: 'pages#blog'
   get 'social', to: 'pages#social'
+  get 'missionaries', to: 'pages#missionaries'
 
   get 'sponsor_child', to: 'pages#sponsor_child'
   # get 'sponsor_pastor', to: 'pages#sponsor_pastor'

@@ -27,20 +27,25 @@ class PagesController < ApplicationController
     @page_finder = "leaders"
     @banner_title = "Our Leaders"
     @col_width = "col-xs-12 col-sm-6 well-center"
-
-    # Find a non-dB way of looping over leaders in a partial
   end
 
   def support
     @page_title = "Support"
     @page_finder = "support"
     @banner_title = "Support our Work"
+  end
 
-    @amt_var_field = params[:amt_var_field] || '1000'
-    @amt = if params[:amt] && params[:amt] != "var" then params[:amt] else @amt_var_field end
+  def missionaries
+    @page_title = "Missionaries"
+    @page_finder = "missionaries"
+    @banner_title = "Support our Missionaries"
 
-    @recur = params[:recur] || 'once'
-    @recur_months = params[:recur_months] || '12'
+    if params[:finder]
+      finder = params[:finder].gsub("-","/")
+      @missionary = "view_entity/91/837/" + finder
+    else
+      @missionary = "view_all/91/837"
+    end
 
   end
 
