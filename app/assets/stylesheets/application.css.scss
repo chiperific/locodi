@@ -20,10 +20,10 @@ $ter-clr-2: white; //rgba(116,165,64,1); //lt green
 $quat-clr:  white; //rgba(32,56,111,1); //dk blue
 
 $pri-clr-trans:   rgba(255,255,255,.5); //rgba(248,237,217,.5); //beige
-$sec-clr-trans:   rgba(255,255,255,.5); //rgba(136,164,210,.5); //lt blue
+$sec-clr-trans:   rgba(136,164,210,.35); //rgba(136,164,210,.5); //lt blue
 $ter-clr-1-trans: rgba(255,255,255,.5); //rgba(231,167,159,.5); //lt red
 $ter-clr-2-trans: rgba(255,255,255,.5); //rgba(83,165,64,.5); //lt green
-$quat-clr-trans:  rgba(255,255,255,.5); //rgba(32,56,111,.65); //dk blue
+$quat-clr-trans:  rgba(32,56,111,.65); //rgba(32,56,111,.65); //dk blue
 
 h1 {
   color: #666666;
@@ -137,7 +137,7 @@ html, body {
 }
 
 body {
-  background-color: $pri-clr;
+  background-color: $sec-clr-trans;
   margin-bottom: 5%;
 }
 

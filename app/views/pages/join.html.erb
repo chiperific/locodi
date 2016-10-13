@@ -7,7 +7,7 @@
 </div>
 
 <div class="content-block">
-  <div class="col-xs-12 col-sm-4">
+  <div class="col-xs-12 col-sm-6">
     <div class="well styled-links">
       <%= icon('plane fa-4x') %>
       <h4>Take a Vision Trip</h4>
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-4">
+  <div class="col-xs-12 col-sm-6">
     <div class="well unstyled-links">
       <%= link_to "#{icon('child fa-4x')}".html_safe, sponsor_child_path %>
       <%= link_to "<h4>Sponsor a Child</h4>".html_safe, sponsor_child_path %>
@@ -42,22 +42,6 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-4">
-    <div class="well unstyled-links">
-      <%= link_to "#{icon('graduation-cap fa-4x')}".html_safe, sponsor_pastor_path %>
-      <%= link_to "<h4>Sponsor a Pastor</h4>".html_safe, sponsor_pastor_path %>
-      <p class="align-left">
-        You can sponsor a pastor to attend classes at the Kingdom Life Training Center in Jinja. There they receive training and support on a variety of topics from running a church to sustainable agricultural development.
-        <br /><br />
-        Your financial gift of $100 provides 7 meals, lodging for two nights and utilities costs for training sessions at Kingdom Life Ministries' training center. This training equips pastors to serve their communities with teaching and spiritual care.
-      </p>
-      <p><%= link_to "Sponsor a Pastor Today", sponsor_pastor_path %></p>
-      <p>
-        <%= mail_to "sponsorship@locodi.org", "Contact us about Pastor Sponsorship", subject: "I'm interested in sponsoring a pastor!", encode: "hex", target: :blank %>
-      </p>
-    </div>
-  </div>
-
   <div class="col-xs-12 col-sm-6">
     <div class="well unstyled-links">
       <%= link_to "#{icon('envelope fa-4x')}".html_safe, support_path %>
@@ -65,7 +49,7 @@
       <p class="align-left">
         Your gifts go directly to the work of LOCODI’s ministries and programs. We are dedicated to being good stewards of the funds entrusted to us.
         <br /><br />
-        Your generosity enables all the <%= link_to "work we do", work_path  %>, from training pastors, to providing for children orphaned by HIV/AIDS and trying to stop the spread of this terrible disease to the next generation.
+        Your generosity enables all the <%= link_to "work we do", initiatives_path  %>, from training pastors, to providing for children orphaned by HIV/AIDS and trying to stop the spread of this terrible disease to the next generation.
         <br /><br />
         Please consider making LOCODI part of your charitable giving.
       </p>
@@ -73,7 +57,7 @@
         <%= link_to "Show your Support Today", support_path %>
       </p>
       <p>
-        <%= mail_to "support@locodi.org", "Contact us about Supporting LOCODI", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
+        <%= mail_to "support@locodi.org", "Contact us about Supporting LOCODI", subject: "I'm interested in supporting LOCODI!", encode: "hex", target: :blank %>
       </p>
     </div>
   </div>
@@ -87,7 +71,7 @@
         <br /><br />
         From spreading the word about LOCODI, to traveling across the world to swing a hammer, you can make a difference.
         <br /><br />
-        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our <%= link_to "events calendar", calendar_path %> and <%= link_to "social media feeds", social_path %> to see what we’re up to.
+        There’s always something you can do to help, just contact us so we can utilize your talents and skills. You can also check out our <%= link_to "facebook page", "https://www.facebook.com/Locodi/", target: "_blank" %> to see what we’re up to.
       </p>
       <p>
         <%= mail_to "info@locodi.org", "Contact us about Volunteer Opportunities", subject: "I'm interested in volunteer opportunities!", encode: "hex", target: :blank %>
