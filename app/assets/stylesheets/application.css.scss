@@ -127,6 +127,14 @@ p {
   float: right;
 }
 
+.image-left {
+  float: left;
+}
+
+.image-right {
+  float: right;
+}
+
 // Template styling
 html, body {
   display: block;
@@ -160,7 +168,7 @@ body {
 }
 
 #wrapper {
-  height: 100%;
+  // height: 100%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -263,17 +271,12 @@ body {
     margin: 5px inherit;
   }
 
-  .footer {
-    background-color: $quat-clr;
-    p {
-      color: rgb(200,200,200);
-    }
-  }
-
-  #created_by {
-    display: none;
-  }
-
+  // .footer {
+  //   background-color: $quat-clr;
+  //   p {
+  //     color: rgb(200,200,200);
+  //   }
+  // }
 }
 
 // Style the Navbar
@@ -311,5 +314,10 @@ body {
 @media (max-width: 767px) {
   .navbar-collapse .donate-button {
     display: none;
+  }
+
+  .navbar-nav li {
+    font-size: 1.5em;
+    text-align: center;
   }
 }

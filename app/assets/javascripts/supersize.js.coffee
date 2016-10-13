@@ -42,3 +42,7 @@ imgResizer = () ->
 $(window).load ->
   imgResizer()
   bannerResizer()
+
+$(window).resize ->
+  imgResizer()
+  bannerResizer()

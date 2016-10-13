@@ -2,9 +2,29 @@
   <%= image_tag 'crouching_sand.jpg', class: "supersized-image" %>
 </div>
 
-<div class="content-block row">
-  <div class="col-xs-12">
-    <iframe class="hysiframe" src="https://app.helpyousponsor.com/frontend/<%= @missionary %>" style="border:0px #FFFFFF none;" name="HYSiFrame" scrolling="no" frameborder="1" height="780px" marginheight="0px" marginwidth="0px" width="100%"></iframe>
-    <p class="text-center">Your donations are tax deductible in the United States. LOCODI is a 501c3 organization, EIN# 47-3250222</p>
+<% if @chooser == 1 %>
+  <div class="row">
+    <div class="col-xs-12">
+      <%= link_to icon('location-arrow fa-fw') + "All Missionaries", missionaries_path, class: "btn btn-default float-right"  %>
+    </div>
   </div>
-</div>
+  <div class="content-block row spacing">
+    <div class="col-xs-12">
+      <iframe class="hysiframe" src="https://app.helpyousponsor.com/frontend/<%= @missionary %>" style="border:0px #FFFFFF none;" name="HYSiFrame" scrolling="no" frameborder="1" height="780px" marginheight="0px" marginwidth="0px" width="100%"></iframe>
+      <p class="text-center">Your donations are tax deductible in the United States. LOCODI is a 501c3 organization, EIN# 47-3250222</p>
+    </div>
+  </div>
+<% else %>
+  <div class="content-block row">
+   <div class="col-xs-12 col-sm-6 missionary-div">
+     <a href="/missionaries?finder=17070">
+       <img src="https://s3-us-west-1.amazonaws.com/hys/347380553bdec359915d1754f3dc6116a098cc0c2.jpg" alt="The Olupots" class="missionary-photo">
+     </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 missionary-div">
+     <a href="/missionaries?finder=17034">
+       <img src="https://s3-us-west-1.amazonaws.com/hys/4ff1085862b9a77b18c528d2bc7cc0a4044c49f61.jpg" alt="The Kragts" class="missionary-photo">
+     </a>
+   </div>
+  </div>
+<% end %>

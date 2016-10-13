@@ -43,8 +43,10 @@ class PagesController < ApplicationController
     if params[:finder]
       finder = params[:finder].gsub("-","/")
       @missionary = "view_entity/91/837/" + finder
+      @chooser = 1
     else
-      @missionary = "view_all/91/837"
+      #@missionary = "view_all/91/837"
+      @chooser = 0
     end
 
   end
