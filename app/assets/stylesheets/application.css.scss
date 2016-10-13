@@ -271,12 +271,7 @@ body {
     margin: 5px inherit;
   }
 
-  // .footer {
-  //   background-color: $quat-clr;
-  //   p {
-  //     color: rgb(200,200,200);
-  //   }
-  // }
+
 }
 
 // Style the Navbar
@@ -319,5 +314,13 @@ body {
   .navbar-nav li {
     font-size: 1.5em;
     text-align: center;
+  }
+}
+
+// Adjust the hysiframe on mobile
+@media ( max-width: 440px) {
+  .hysiframe {
+    width: 130%;
+    margin-left: -15%;
   }
 }
