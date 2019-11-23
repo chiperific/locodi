@@ -2,12 +2,12 @@
 
 source 'https://rubygems.org'
 
-ruby '2.5.3' # Heroku can't assume.
+ruby '2.6.3' # Heroku can't assume.
 
 gem 'actionview-encoded_mail_to' # protect email addresses from spam.
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'font-awesome-sass', '~> 4.7.0'
+gem 'font-awesome-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -18,12 +18,16 @@ gem 'pg', '0.20'
 gem 'puma'
 gem 'rails'
 gem 'rails_12factor', group: :production # Thanks Heroku!
-gem 'sass-rails', '~> 5.0'
+gem 'sassc-rails', '>= 2.1.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug'
   gem 'spring'
+end
+
+group :development do
+  gem 'better_errors'
   gem 'web-console', '~> 2.0'
 end
